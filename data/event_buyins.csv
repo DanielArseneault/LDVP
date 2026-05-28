@@ -1,0 +1,785 @@
+﻿year,sheet,event_order,event_label,event_month,event_day,event_date,host,player,buyin
+2026,LDVP - 2026,2,FEV (28),2,28.0,2026-02-28,Don Wagner,Dany MacDonald,40.0
+2026,LDVP - 2026,4,AVR (20),4,20.0,2026-04-20,Martin Allard,Dany MacDonald,40.0
+2026,LDVP - 2026,5,MAY (23),5,23.0,2026-05-23,Eric Arseneault,Dany MacDonald,20.0
+2026,LDVP - 2026,4,AVR (20),4,20.0,2026-04-20,Martin Allard,Martin Allard,40.0
+2026,LDVP - 2026,1,JAN (16),1,16.0,2026-01-16,Emile Gallant,Eric Arseneault,40.0
+2026,LDVP - 2026,5,MAY (23),5,23.0,2026-05-23,Eric Arseneault,Eric Arseneault,20.0
+2026,LDVP - 2026,2,FEV (28),2,28.0,2026-02-28,Don Wagner,Charles Duguay,20.0
+2026,LDVP - 2026,4,AVR (20),4,20.0,2026-04-20,Martin Allard,Charles Duguay,40.0
+2026,LDVP - 2026,5,MAY (23),5,23.0,2026-05-23,Eric Arseneault,Charles Duguay,20.0
+2026,LDVP - 2026,5,MAY (23),5,23.0,2026-05-23,Eric Arseneault,Maxime Duguay,40.0
+2026,LDVP - 2026,1,JAN (16),1,16.0,2026-01-16,Emile Gallant,Andre Laurin,60.0
+2026,LDVP - 2026,3,MAR (18),3,18.0,2026-03-18,Nicholas Brugali,Andre Laurin,60.0
+2026,LDVP - 2026,4,AVR (20),4,20.0,2026-04-20,Martin Allard,Andre Laurin,20.0
+2026,LDVP - 2026,5,MAY (23),5,23.0,2026-05-23,Eric Arseneault,Andre Laurin,20.0
+2026,LDVP - 2026,2,FEV (28),2,28.0,2026-02-28,Don Wagner,Serge Duguay,20.0
+2026,LDVP - 2026,1,JAN (16),1,16.0,2026-01-16,Emile Gallant,Don Wagner,80.0
+2026,LDVP - 2026,2,FEV (28),2,28.0,2026-02-28,Don Wagner,Don Wagner,80.0
+2026,LDVP - 2026,3,MAR (18),3,18.0,2026-03-18,Nicholas Brugali,Don Wagner,20.0
+2026,LDVP - 2026,5,MAY (23),5,23.0,2026-05-23,Eric Arseneault,Don Wagner,20.0
+2026,LDVP - 2026,2,FEV (28),2,28.0,2026-02-28,Don Wagner,Rod Stevula,20.0
+2026,LDVP - 2026,4,AVR (20),4,20.0,2026-04-20,Martin Allard,Rod Stevula,20.0
+2026,LDVP - 2026,1,JAN (16),1,16.0,2026-01-16,Emile Gallant,Sylvain Gagné,20.0
+2026,LDVP - 2026,2,FEV (28),2,28.0,2026-02-28,Don Wagner,Sylvain Gagné,40.0
+2026,LDVP - 2026,3,MAR (18),3,18.0,2026-03-18,Nicholas Brugali,Sylvain Gagné,60.0
+2026,LDVP - 2026,4,AVR (20),4,20.0,2026-04-20,Martin Allard,Sylvain Gagné,40.0
+2026,LDVP - 2026,1,JAN (16),1,16.0,2026-01-16,Emile Gallant,Rob McConnell,40.0
+2026,LDVP - 2026,2,FEV (28),2,28.0,2026-02-28,Don Wagner,Rob McConnell,20.0
+2026,LDVP - 2026,4,AVR (20),4,20.0,2026-04-20,Martin Allard,Rob McConnell,80.0
+2026,LDVP - 2026,1,JAN (16),1,16.0,2026-01-16,Emile Gallant,Eric Godin,20.0
+2026,LDVP - 2026,2,FEV (28),2,28.0,2026-02-28,Don Wagner,Eric Godin,40.0
+2026,LDVP - 2026,3,MAR (18),3,18.0,2026-03-18,Nicholas Brugali,Eric Godin,20.0
+2026,LDVP - 2026,4,AVR (20),4,20.0,2026-04-20,Martin Allard,Eric Godin,20.0
+2026,LDVP - 2026,1,JAN (16),1,16.0,2026-01-16,Emile Gallant,Emile Gallant,100.0
+2026,LDVP - 2026,4,AVR (20),4,20.0,2026-04-20,Martin Allard,Emile Gallant,20.0
+2026,LDVP - 2026,5,MAY (23),5,23.0,2026-05-23,Eric Arseneault,Emile Gallant,140.0
+2026,LDVP - 2026,1,JAN (16),1,16.0,2026-01-16,Emile Gallant,Alex Robert,20.0
+2026,LDVP - 2026,2,FEV (28),2,28.0,2026-02-28,Don Wagner,Alex Robert,20.0
+2026,LDVP - 2026,4,AVR (20),4,20.0,2026-04-20,Martin Allard,Alex Robert,40.0
+2026,LDVP - 2026,5,MAY (23),5,23.0,2026-05-23,Eric Arseneault,Alex Robert,20.0
+2026,LDVP - 2026,1,JAN (16),1,16.0,2026-01-16,Emile Gallant,Nicholas Brugali,40.0
+2026,LDVP - 2026,2,FEV (28),2,28.0,2026-02-28,Don Wagner,Nicholas Brugali,60.0
+2026,LDVP - 2026,3,MAR (18),3,18.0,2026-03-18,Nicholas Brugali,Nicholas Brugali,40.0
+2026,LDVP - 2026,4,AVR (20),4,20.0,2026-04-20,Martin Allard,Nicholas Brugali,40.0
+2026,LDVP - 2026,3,MAR (18),3,18.0,2026-03-18,Nicholas Brugali,David Côté,40.0
+2026,LDVP - 2026,3,MAR (18),3,18.0,2026-03-18,Nicholas Brugali,Sophie Marchand,20.0
+2026,LDVP - 2026,4,AVR (20),4,20.0,2026-04-20,Martin Allard,Sophie Marchand,40.0
+2025,LDVP - 2025,2,FEV (11),2,11.0,2025-02-11,Don Wagner,Dany MacDonald,80.0
+2025,LDVP - 2025,3,MAR (18),3,18.0,2025-03-18,Charles Duguay,Dany MacDonald,60.0
+2025,LDVP - 2025,5,MAY  (6),5,6.0,2025-05-06,Don Wagner,Dany MacDonald,40.0
+2025,LDVP - 2025,6,JUIN (10),6,10.0,2025-06-10,Dany MacDonald,Dany MacDonald,20.0
+2025,LDVP - 2025,7,JUI (23),7,23.0,2025-07-23,Eric Godin,Dany MacDonald,20.0
+2025,LDVP - 2025,8,AOUT (23),8,23.0,2025-08-23,Emile Gallant,Dany MacDonald,40.0
+2025,LDVP - 2025,10,OCT (21),10,21.0,2025-10-21,Eric Arseneault,Dany MacDonald,20.0
+2025,LDVP - 2025,11,NOV (18),11,18.0,2025-11-18,Eric Godin,Dany MacDonald,20.0
+2025,LDVP - 2025,12,2024-12-06 00:00:00,12,6.0,2024-12-06,Emile Gallant,Dany MacDonald,20.0
+2025,LDVP - 2025,2,FEV (11),2,11.0,2025-02-11,Don Wagner,Eric Arseneault,40.0
+2025,LDVP - 2025,10,OCT (21),10,21.0,2025-10-21,Eric Arseneault,Eric Arseneault,60.0
+2025,LDVP - 2025,1,JAN (21),1,21.0,2025-01-21,,Dakota Cameron,60.0
+2025,LDVP - 2025,12,2024-12-06 00:00:00,12,6.0,2024-12-06,Emile Gallant,Dakota Cameron,20.0
+2025,LDVP - 2025,2,FEV (11),2,11.0,2025-02-11,Don Wagner,Charles Duguay,40.0
+2025,LDVP - 2025,3,MAR (18),3,18.0,2025-03-18,Charles Duguay,Charles Duguay,40.0
+2025,LDVP - 2025,5,MAY  (6),5,6.0,2025-05-06,Don Wagner,Charles Duguay,80.0
+2025,LDVP - 2025,6,JUIN (10),6,10.0,2025-06-10,Dany MacDonald,Charles Duguay,80.0
+2025,LDVP - 2025,7,JUI (23),7,23.0,2025-07-23,Eric Godin,Charles Duguay,60.0
+2025,LDVP - 2025,8,AOUT (23),8,23.0,2025-08-23,Emile Gallant,Charles Duguay,60.0
+2025,LDVP - 2025,11,NOV (18),11,18.0,2025-11-18,Eric Godin,Charles Duguay,20.0
+2025,LDVP - 2025,12,2024-12-06 00:00:00,12,6.0,2024-12-06,Emile Gallant,Charles Duguay,40.0
+2025,LDVP - 2025,1,JAN (21),1,21.0,2025-01-21,,Maxime Duguay,40.0
+2025,LDVP - 2025,10,OCT (21),10,21.0,2025-10-21,Eric Arseneault,Maxime Duguay,20.0
+2025,LDVP - 2025,1,JAN (21),1,21.0,2025-01-21,,Andre Laurin,60.0
+2025,LDVP - 2025,2,FEV (11),2,11.0,2025-02-11,Don Wagner,Andre Laurin,60.0
+2025,LDVP - 2025,3,MAR (18),3,18.0,2025-03-18,Charles Duguay,Andre Laurin,60.0
+2025,LDVP - 2025,5,MAY  (6),5,6.0,2025-05-06,Don Wagner,Andre Laurin,40.0
+2025,LDVP - 2025,7,JUI (23),7,23.0,2025-07-23,Eric Godin,Andre Laurin,20.0
+2025,LDVP - 2025,10,OCT (21),10,21.0,2025-10-21,Eric Arseneault,Andre Laurin,60.0
+2025,LDVP - 2025,11,NOV (18),11,18.0,2025-11-18,Eric Godin,Andre Laurin,20.0
+2025,LDVP - 2025,12,2024-12-06 00:00:00,12,6.0,2024-12-06,Emile Gallant,Andre Laurin,20.0
+2025,LDVP - 2025,1,JAN (21),1,21.0,2025-01-21,,Serge Duguay,20.0
+2025,LDVP - 2025,2,FEV (11),2,11.0,2025-02-11,Don Wagner,Serge Duguay,20.0
+2025,LDVP - 2025,3,MAR (18),3,18.0,2025-03-18,Charles Duguay,Serge Duguay,40.0
+2025,LDVP - 2025,8,AOUT (23),8,23.0,2025-08-23,Emile Gallant,Serge Duguay,20.0
+2025,LDVP - 2025,10,OCT (21),10,21.0,2025-10-21,Eric Arseneault,Serge Duguay,40.0
+2025,LDVP - 2025,11,NOV (18),11,18.0,2025-11-18,Eric Godin,Serge Duguay,40.0
+2025,LDVP - 2025,1,JAN (21),1,21.0,2025-01-21,,Daniel Arseneault,20.0
+2025,LDVP - 2025,1,JAN (21),1,21.0,2025-01-21,,Don Wagner,60.0
+2025,LDVP - 2025,2,FEV (11),2,11.0,2025-02-11,Don Wagner,Don Wagner,20.0
+2025,LDVP - 2025,3,MAR (18),3,18.0,2025-03-18,Charles Duguay,Don Wagner,20.0
+2025,LDVP - 2025,5,MAY  (6),5,6.0,2025-05-06,Don Wagner,Don Wagner,40.0
+2025,LDVP - 2025,6,JUIN (10),6,10.0,2025-06-10,Dany MacDonald,Don Wagner,20.0
+2025,LDVP - 2025,7,JUI (23),7,23.0,2025-07-23,Eric Godin,Don Wagner,20.0
+2025,LDVP - 2025,8,AOUT (23),8,23.0,2025-08-23,Emile Gallant,Don Wagner,20.0
+2025,LDVP - 2025,10,OCT (21),10,21.0,2025-10-21,Eric Arseneault,Don Wagner,40.0
+2025,LDVP - 2025,11,NOV (18),11,18.0,2025-11-18,Eric Godin,Don Wagner,40.0
+2025,LDVP - 2025,12,2024-12-06 00:00:00,12,6.0,2024-12-06,Emile Gallant,Don Wagner,60.0
+2025,LDVP - 2025,1,JAN (21),1,21.0,2025-01-21,,Rod Stevula,40.0
+2025,LDVP - 2025,8,AOUT (23),8,23.0,2025-08-23,Emile Gallant,Rod Stevula,40.0
+2025,LDVP - 2025,12,2024-12-06 00:00:00,12,6.0,2024-12-06,Emile Gallant,Rod Stevula,40.0
+2025,LDVP - 2025,1,JAN (21),1,21.0,2025-01-21,,Sylvain Gagné,60.0
+2025,LDVP - 2025,2,FEV (11),2,11.0,2025-02-11,Don Wagner,Sylvain Gagné,20.0
+2025,LDVP - 2025,7,JUI (23),7,23.0,2025-07-23,Eric Godin,Sylvain Gagné,20.0
+2025,LDVP - 2025,8,AOUT (23),8,23.0,2025-08-23,Emile Gallant,Sylvain Gagné,100.0
+2025,LDVP - 2025,10,OCT (21),10,21.0,2025-10-21,Eric Arseneault,Sylvain Gagné,40.0
+2025,LDVP - 2025,1,JAN (21),1,21.0,2025-01-21,,Rob McConnell,40.0
+2025,LDVP - 2025,2,FEV (11),2,11.0,2025-02-11,Don Wagner,Rob McConnell,20.0
+2025,LDVP - 2025,3,MAR (18),3,18.0,2025-03-18,Charles Duguay,Rob McConnell,20.0
+2025,LDVP - 2025,5,MAY  (6),5,6.0,2025-05-06,Don Wagner,Rob McConnell,20.0
+2025,LDVP - 2025,6,JUIN (10),6,10.0,2025-06-10,Dany MacDonald,Rob McConnell,40.0
+2025,LDVP - 2025,7,JUI (23),7,23.0,2025-07-23,Eric Godin,Rob McConnell,20.0
+2025,LDVP - 2025,8,AOUT (23),8,23.0,2025-08-23,Emile Gallant,Rob McConnell,40.0
+2025,LDVP - 2025,11,NOV (18),11,18.0,2025-11-18,Eric Godin,Rob McConnell,20.0
+2025,LDVP - 2025,12,2024-12-06 00:00:00,12,6.0,2024-12-06,Emile Gallant,Rob McConnell,60.0
+2025,LDVP - 2025,1,JAN (21),1,21.0,2025-01-21,,Eric Godin,40.0
+2025,LDVP - 2025,2,FEV (11),2,11.0,2025-02-11,Don Wagner,Eric Godin,60.0
+2025,LDVP - 2025,7,JUI (23),7,23.0,2025-07-23,Eric Godin,Eric Godin,40.0
+2025,LDVP - 2025,10,OCT (21),10,21.0,2025-10-21,Eric Arseneault,Eric Godin,80.0
+2025,LDVP - 2025,11,NOV (18),11,18.0,2025-11-18,Eric Godin,Eric Godin,40.0
+2025,LDVP - 2025,12,2024-12-06 00:00:00,12,6.0,2024-12-06,Emile Gallant,Eric Godin,60.0
+2025,LDVP - 2025,1,JAN (21),1,21.0,2025-01-21,,Emile Gallant,20.0
+2025,LDVP - 2025,2,FEV (11),2,11.0,2025-02-11,Don Wagner,Emile Gallant,20.0
+2025,LDVP - 2025,3,MAR (18),3,18.0,2025-03-18,Charles Duguay,Emile Gallant,120.0
+2025,LDVP - 2025,5,MAY  (6),5,6.0,2025-05-06,Don Wagner,Emile Gallant,140.0
+2025,LDVP - 2025,6,JUIN (10),6,10.0,2025-06-10,Dany MacDonald,Emile Gallant,40.0
+2025,LDVP - 2025,7,JUI (23),7,23.0,2025-07-23,Eric Godin,Emile Gallant,100.0
+2025,LDVP - 2025,8,AOUT (23),8,23.0,2025-08-23,Emile Gallant,Emile Gallant,20.0
+2025,LDVP - 2025,11,NOV (18),11,18.0,2025-11-18,Eric Godin,Emile Gallant,20.0
+2025,LDVP - 2025,12,2024-12-06 00:00:00,12,6.0,2024-12-06,Emile Gallant,Emile Gallant,80.0
+2025,LDVP - 2025,2,FEV (11),2,11.0,2025-02-11,Don Wagner,Alex Robert,60.0
+2025,LDVP - 2025,3,MAR (18),3,18.0,2025-03-18,Charles Duguay,Alex Robert,80.0
+2025,LDVP - 2025,5,MAY  (6),5,6.0,2025-05-06,Don Wagner,Alex Robert,20.0
+2025,LDVP - 2025,6,JUIN (10),6,10.0,2025-06-10,Dany MacDonald,Alex Robert,60.0
+2025,LDVP - 2025,7,JUI (23),7,23.0,2025-07-23,Eric Godin,Alex Robert,40.0
+2025,LDVP - 2025,8,AOUT (23),8,23.0,2025-08-23,Emile Gallant,Alex Robert,60.0
+2025,LDVP - 2025,11,NOV (18),11,18.0,2025-11-18,Eric Godin,Alex Robert,40.0
+2025,LDVP - 2025,12,2024-12-06 00:00:00,12,6.0,2024-12-06,Emile Gallant,Alex Robert,40.0
+2025,LDVP - 2025,1,JAN (21),1,21.0,2025-01-21,,Nicholas Brugali,100.0
+2025,LDVP - 2025,2,FEV (11),2,11.0,2025-02-11,Don Wagner,Nicholas Brugali,20.0
+2025,LDVP - 2025,3,MAR (18),3,18.0,2025-03-18,Charles Duguay,Nicholas Brugali,20.0
+2025,LDVP - 2025,5,MAY  (6),5,6.0,2025-05-06,Don Wagner,Nicholas Brugali,100.0
+2025,LDVP - 2025,6,JUIN (10),6,10.0,2025-06-10,Dany MacDonald,Nicholas Brugali,40.0
+2025,LDVP - 2025,7,JUI (23),7,23.0,2025-07-23,Eric Godin,Nicholas Brugali,60.0
+2025,LDVP - 2025,10,OCT (21),10,21.0,2025-10-21,Eric Arseneault,Nicholas Brugali,40.0
+2025,LDVP - 2025,11,NOV (18),11,18.0,2025-11-18,Eric Godin,Nicholas Brugali,20.0
+2025,LDVP - 2025,12,2024-12-06 00:00:00,12,6.0,2024-12-06,Emile Gallant,Nicholas Brugali,60.0
+2025,LDVP - 2025,11,NOV (18),11,18.0,2025-11-18,Eric Godin,Steve Doucette,40.0
+2025,LDVP - 2025,5,MAY  (6),5,6.0,2025-05-06,Don Wagner,Mike MacInnis,60.0
+2025,LDVP - 2025,8,AOUT (23),8,23.0,2025-08-23,Emile Gallant,Mike MacInnis,40.0
+2025,LDVP - 2025,11,NOV (18),11,18.0,2025-11-18,Eric Godin,David Côté,40.0
+2025,LDVP - 2025,12,2024-12-06 00:00:00,12,6.0,2024-12-06,Emile Gallant,David Côté,40.0
+2024,LDVP - 2024,1,JAN (21),1,21.0,2024-01-21,Don Wagner,Dany MacDonald,80.0
+2024,LDVP - 2024,2,FEV (11),2,11.0,2024-02-11,Martin Allard,Dany MacDonald,20.0
+2024,LDVP - 2024,3,MAR (18),3,18.0,2024-03-18,Don Wagner,Dany MacDonald,60.0
+2024,LDVP - 2024,4,AVR (20),4,20.0,2024-04-20,Charles Duguay,Dany MacDonald,60.0
+2024,LDVP - 2024,5,MAY  (6),5,6.0,2024-05-06,Martin Allard,Dany MacDonald,80.0
+2024,LDVP - 2024,6,JUIN (10),6,10.0,2024-06-10,Andre Laurin,Dany MacDonald,20.0
+2024,LDVP - 2024,11,NOV (18),11,18.0,2024-11-18,,Dany MacDonald,40.0
+2024,LDVP - 2024,12,2024-12-13 00:00:00,12,13.0,2024-12-13,,Dany MacDonald,40.0
+2024,LDVP - 2024,1,JAN (21),1,21.0,2024-01-21,Don Wagner,Martin Allard,20.0
+2024,LDVP - 2024,2,FEV (11),2,11.0,2024-02-11,Martin Allard,Martin Allard,20.0
+2024,LDVP - 2024,3,MAR (18),3,18.0,2024-03-18,Don Wagner,Martin Allard,40.0
+2024,LDVP - 2024,5,MAY  (6),5,6.0,2024-05-06,Martin Allard,Martin Allard,60.0
+2024,LDVP - 2024,10,OCT (21),10,21.0,2024-10-21,,Martin Allard,60.0
+2024,LDVP - 2024,11,NOV (18),11,18.0,2024-11-18,,Martin Allard,60.0
+2024,LDVP - 2024,12,2024-12-13 00:00:00,12,13.0,2024-12-13,,Martin Allard,40.0
+2024,LDVP - 2024,2,FEV (11),2,11.0,2024-02-11,Martin Allard,Eric Arseneault,20.0
+2024,LDVP - 2024,3,MAR (18),3,18.0,2024-03-18,Don Wagner,Eric Arseneault,20.0
+2024,LDVP - 2024,4,AVR (20),4,20.0,2024-04-20,Charles Duguay,Eric Arseneault,20.0
+2024,LDVP - 2024,6,JUIN (10),6,10.0,2024-06-10,Andre Laurin,Eric Arseneault,60.0
+2024,LDVP - 2024,11,NOV (18),11,18.0,2024-11-18,,Eric Arseneault,60.0
+2024,LDVP - 2024,1,JAN (21),1,21.0,2024-01-21,Don Wagner,Dakota Cameron,40.0
+2024,LDVP - 2024,4,AVR (20),4,20.0,2024-04-20,Charles Duguay,Dakota Cameron,60.0
+2024,LDVP - 2024,6,JUIN (10),6,10.0,2024-06-10,Andre Laurin,Dakota Cameron,60.0
+2024,LDVP - 2024,9,SEPT (19),9,19.0,2024-09-19,Charles Duguay,Dakota Cameron,40.0
+2024,LDVP - 2024,11,NOV (18),11,18.0,2024-11-18,,Dakota Cameron,160.0
+2024,LDVP - 2024,12,2024-12-13 00:00:00,12,13.0,2024-12-13,,Dakota Cameron,20.0
+2024,LDVP - 2024,1,JAN (21),1,21.0,2024-01-21,Don Wagner,Charles Duguay,40.0
+2024,LDVP - 2024,2,FEV (11),2,11.0,2024-02-11,Martin Allard,Charles Duguay,40.0
+2024,LDVP - 2024,4,AVR (20),4,20.0,2024-04-20,Charles Duguay,Charles Duguay,100.0
+2024,LDVP - 2024,5,MAY  (6),5,6.0,2024-05-06,Martin Allard,Charles Duguay,20.0
+2024,LDVP - 2024,6,JUIN (10),6,10.0,2024-06-10,Andre Laurin,Charles Duguay,60.0
+2024,LDVP - 2024,8,AOUT (26),8,26.0,2024-08-26,Eric Godin,Charles Duguay,40.0
+2024,LDVP - 2024,9,SEPT (19),9,19.0,2024-09-19,Charles Duguay,Charles Duguay,20.0
+2024,LDVP - 2024,10,OCT (21),10,21.0,2024-10-21,,Charles Duguay,20.0
+2024,LDVP - 2024,11,NOV (18),11,18.0,2024-11-18,,Charles Duguay,40.0
+2024,LDVP - 2024,12,2024-12-13 00:00:00,12,13.0,2024-12-13,,Charles Duguay,20.0
+2024,LDVP - 2024,1,JAN (21),1,21.0,2024-01-21,Don Wagner,Maxime Duguay,40.0
+2024,LDVP - 2024,2,FEV (11),2,11.0,2024-02-11,Martin Allard,Maxime Duguay,40.0
+2024,LDVP - 2024,4,AVR (20),4,20.0,2024-04-20,Charles Duguay,Maxime Duguay,40.0
+2024,LDVP - 2024,11,NOV (18),11,18.0,2024-11-18,,Maxime Duguay,40.0
+2024,LDVP - 2024,1,JAN (21),1,21.0,2024-01-21,Don Wagner,Andre Laurin,20.0
+2024,LDVP - 2024,2,FEV (11),2,11.0,2024-02-11,Martin Allard,Andre Laurin,40.0
+2024,LDVP - 2024,4,AVR (20),4,20.0,2024-04-20,Charles Duguay,Andre Laurin,20.0
+2024,LDVP - 2024,6,JUIN (10),6,10.0,2024-06-10,Andre Laurin,Andre Laurin,60.0
+2024,LDVP - 2024,10,OCT (21),10,21.0,2024-10-21,,Andre Laurin,60.0
+2024,LDVP - 2024,11,NOV (18),11,18.0,2024-11-18,,Andre Laurin,100.0
+2024,LDVP - 2024,12,2024-12-13 00:00:00,12,13.0,2024-12-13,,Andre Laurin,40.0
+2024,LDVP - 2024,2,FEV (11),2,11.0,2024-02-11,Martin Allard,Serge Duguay,60.0
+2024,LDVP - 2024,3,MAR (18),3,18.0,2024-03-18,Don Wagner,Serge Duguay,40.0
+2024,LDVP - 2024,5,MAY  (6),5,6.0,2024-05-06,Martin Allard,Serge Duguay,40.0
+2024,LDVP - 2024,11,NOV (18),11,18.0,2024-11-18,,Serge Duguay,40.0
+2024,LDVP - 2024,12,2024-12-13 00:00:00,12,13.0,2024-12-13,,Serge Duguay,20.0
+2024,LDVP - 2024,11,NOV (18),11,18.0,2024-11-18,,Daniel Arseneault,60.0
+2024,LDVP - 2024,1,JAN (21),1,21.0,2024-01-21,Don Wagner,Don Wagner,60.0
+2024,LDVP - 2024,3,MAR (18),3,18.0,2024-03-18,Don Wagner,Don Wagner,20.0
+2024,LDVP - 2024,4,AVR (20),4,20.0,2024-04-20,Charles Duguay,Don Wagner,40.0
+2024,LDVP - 2024,6,JUIN (10),6,10.0,2024-06-10,Andre Laurin,Don Wagner,20.0
+2024,LDVP - 2024,9,SEPT (19),9,19.0,2024-09-19,Charles Duguay,Don Wagner,60.0
+2024,LDVP - 2024,12,2024-12-13 00:00:00,12,13.0,2024-12-13,,Don Wagner,60.0
+2024,LDVP - 2024,2,FEV (11),2,11.0,2024-02-11,Martin Allard,Gervais Allard,20.0
+2024,LDVP - 2024,11,NOV (18),11,18.0,2024-11-18,,Mathieu Arsenault,40.0
+2024,LDVP - 2024,1,JAN (21),1,21.0,2024-01-21,Don Wagner,Rod Stevula,20.0
+2024,LDVP - 2024,2,FEV (11),2,11.0,2024-02-11,Martin Allard,Rod Stevula,20.0
+2024,LDVP - 2024,6,JUIN (10),6,10.0,2024-06-10,Andre Laurin,Rod Stevula,40.0
+2024,LDVP - 2024,9,SEPT (19),9,19.0,2024-09-19,Charles Duguay,Rod Stevula,20.0
+2024,LDVP - 2024,11,NOV (18),11,18.0,2024-11-18,,Rod Stevula,20.0
+2024,LDVP - 2024,1,JAN (21),1,21.0,2024-01-21,Don Wagner,Sylvain Gagné,80.0
+2024,LDVP - 2024,5,MAY  (6),5,6.0,2024-05-06,Martin Allard,Sylvain Gagné,80.0
+2024,LDVP - 2024,9,SEPT (19),9,19.0,2024-09-19,Charles Duguay,Sylvain Gagné,80.0
+2024,LDVP - 2024,11,NOV (18),11,18.0,2024-11-18,,Sylvain Gagné,20.0
+2024,LDVP - 2024,1,JAN (21),1,21.0,2024-01-21,Don Wagner,Rob McConnell,40.0
+2024,LDVP - 2024,2,FEV (11),2,11.0,2024-02-11,Martin Allard,Rob McConnell,20.0
+2024,LDVP - 2024,4,AVR (20),4,20.0,2024-04-20,Charles Duguay,Rob McConnell,60.0
+2024,LDVP - 2024,6,JUIN (10),6,10.0,2024-06-10,Andre Laurin,Rob McConnell,20.0
+2024,LDVP - 2024,8,AOUT (26),8,26.0,2024-08-26,Eric Godin,Rob McConnell,40.0
+2024,LDVP - 2024,9,SEPT (19),9,19.0,2024-09-19,Charles Duguay,Rob McConnell,20.0
+2024,LDVP - 2024,10,OCT (21),10,21.0,2024-10-21,,Rob McConnell,40.0
+2024,LDVP - 2024,11,NOV (18),11,18.0,2024-11-18,,Rob McConnell,20.0
+2024,LDVP - 2024,12,2024-12-13 00:00:00,12,13.0,2024-12-13,,Rob McConnell,60.0
+2024,LDVP - 2024,1,JAN (21),1,21.0,2024-01-21,Don Wagner,Eric Godin,20.0
+2024,LDVP - 2024,3,MAR (18),3,18.0,2024-03-18,Don Wagner,Eric Godin,40.0
+2024,LDVP - 2024,5,MAY  (6),5,6.0,2024-05-06,Martin Allard,Eric Godin,20.0
+2024,LDVP - 2024,6,JUIN (10),6,10.0,2024-06-10,Andre Laurin,Eric Godin,60.0
+2024,LDVP - 2024,8,AOUT (26),8,26.0,2024-08-26,Eric Godin,Eric Godin,60.0
+2024,LDVP - 2024,9,SEPT (19),9,19.0,2024-09-19,Charles Duguay,Eric Godin,60.0
+2024,LDVP - 2024,11,NOV (18),11,18.0,2024-11-18,,Eric Godin,60.0
+2024,LDVP - 2024,12,2024-12-13 00:00:00,12,13.0,2024-12-13,,Eric Godin,20.0
+2024,LDVP - 2024,1,JAN (21),1,21.0,2024-01-21,Don Wagner,Emile Gallant,60.0
+2024,LDVP - 2024,2,FEV (11),2,11.0,2024-02-11,Martin Allard,Emile Gallant,140.0
+2024,LDVP - 2024,3,MAR (18),3,18.0,2024-03-18,Don Wagner,Emile Gallant,80.0
+2024,LDVP - 2024,4,AVR (20),4,20.0,2024-04-20,Charles Duguay,Emile Gallant,40.0
+2024,LDVP - 2024,5,MAY  (6),5,6.0,2024-05-06,Martin Allard,Emile Gallant,20.0
+2024,LDVP - 2024,8,AOUT (26),8,26.0,2024-08-26,Eric Godin,Emile Gallant,80.0
+2024,LDVP - 2024,9,SEPT (19),9,19.0,2024-09-19,Charles Duguay,Emile Gallant,160.0
+2024,LDVP - 2024,10,OCT (21),10,21.0,2024-10-21,,Emile Gallant,40.0
+2024,LDVP - 2024,11,NOV (18),11,18.0,2024-11-18,,Emile Gallant,80.0
+2024,LDVP - 2024,3,MAR (18),3,18.0,2024-03-18,Don Wagner,Alex Robert,60.0
+2024,LDVP - 2024,4,AVR (20),4,20.0,2024-04-20,Charles Duguay,Alex Robert,20.0
+2024,LDVP - 2024,5,MAY  (6),5,6.0,2024-05-06,Martin Allard,Alex Robert,80.0
+2024,LDVP - 2024,6,JUIN (10),6,10.0,2024-06-10,Andre Laurin,Alex Robert,60.0
+2024,LDVP - 2024,8,AOUT (26),8,26.0,2024-08-26,Eric Godin,Alex Robert,40.0
+2024,LDVP - 2024,9,SEPT (19),9,19.0,2024-09-19,Charles Duguay,Alex Robert,20.0
+2024,LDVP - 2024,10,OCT (21),10,21.0,2024-10-21,,Alex Robert,60.0
+2024,LDVP - 2024,11,NOV (18),11,18.0,2024-11-18,,Alex Robert,20.0
+2024,LDVP - 2024,12,2024-12-13 00:00:00,12,13.0,2024-12-13,,Alex Robert,100.0
+2024,LDVP - 2024,1,JAN (21),1,21.0,2024-01-21,Don Wagner,Nicholas Brugali,40.0
+2024,LDVP - 2024,3,MAR (18),3,18.0,2024-03-18,Don Wagner,Nicholas Brugali,20.0
+2024,LDVP - 2024,4,AVR (20),4,20.0,2024-04-20,Charles Duguay,Nicholas Brugali,20.0
+2024,LDVP - 2024,5,MAY  (6),5,6.0,2024-05-06,Martin Allard,Nicholas Brugali,80.0
+2024,LDVP - 2024,6,JUIN (10),6,10.0,2024-06-10,Andre Laurin,Nicholas Brugali,60.0
+2024,LDVP - 2024,8,AOUT (26),8,26.0,2024-08-26,Eric Godin,Nicholas Brugali,20.0
+2024,LDVP - 2024,10,OCT (21),10,21.0,2024-10-21,,Nicholas Brugali,20.0
+2024,LDVP - 2024,11,NOV (18),11,18.0,2024-11-18,,Nicholas Brugali,40.0
+2024,LDVP - 2024,12,2024-12-13 00:00:00,12,13.0,2024-12-13,,Nicholas Brugali,60.0
+2024,LDVP - 2024,4,AVR (20),4,20.0,2024-04-20,Charles Duguay,Alexandre Hébert,60.0
+2024,LDVP - 2024,5,MAY  (6),5,6.0,2024-05-06,Martin Allard,Alexandre Hébert,40.0
+2024,LDVP - 2024,11,NOV (18),11,18.0,2024-11-18,,Alexandre Hébert,100.0
+2024,LDVP - 2024,11,NOV (18),11,18.0,2024-11-18,,Simon Dauphinais,60.0
+2024,LDVP - 2024,12,2024-12-13 00:00:00,12,13.0,2024-12-13,,Simon Dauphinais,20.0
+2023,LDVP - 2023,1,JAN (21),1,21.0,2023-01-21,Eric Arseneault,Dany MacDonald,60.0
+2023,LDVP - 2023,2,FEV (11),2,11.0,2023-02-11,Sebastien Claude,Dany MacDonald,40.0
+2023,LDVP - 2023,3,MAR (18),3,18.0,2023-03-18,Charles Duguay,Dany MacDonald,40.0
+2023,LDVP - 2023,5,MAY  (6),5,6.0,2023-05-06,Martin Allard,Dany MacDonald,40.0
+2023,LDVP - 2023,6,JUIN (10),6,10.0,2023-06-10,Maxime Duguay,Dany MacDonald,20.0
+2023,LDVP - 2023,8,AOUT (26),8,26.0,2023-08-26,Charles Duguay,Dany MacDonald,20.0
+2023,LDVP - 2023,10,OCT (21),10,21.0,2023-10-21,Dany MacDonald,Dany MacDonald,20.0
+2023,LDVP - 2023,11,NOV (18),11,18.0,2023-11-18,Eric Arseneault,Dany MacDonald,20.0
+2023,LDVP - 2023,12,DEC (9),12,9.0,2023-12-09,,Dany MacDonald,60.0
+2023,LDVP - 2023,1,JAN (21),1,21.0,2023-01-21,Eric Arseneault,Martin Allard,20.0
+2023,LDVP - 2023,3,MAR (18),3,18.0,2023-03-18,Charles Duguay,Martin Allard,20.0
+2023,LDVP - 2023,5,MAY  (6),5,6.0,2023-05-06,Martin Allard,Martin Allard,60.0
+2023,LDVP - 2023,8,AOUT (26),8,26.0,2023-08-26,Charles Duguay,Martin Allard,60.0
+2023,LDVP - 2023,11,NOV (18),11,18.0,2023-11-18,Eric Arseneault,Martin Allard,20.0
+2023,LDVP - 2023,1,JAN (21),1,21.0,2023-01-21,Eric Arseneault,Eric Arseneault,20.0
+2023,LDVP - 2023,6,JUIN (10),6,10.0,2023-06-10,Maxime Duguay,Eric Arseneault,40.0
+2023,LDVP - 2023,10,OCT (21),10,21.0,2023-10-21,Dany MacDonald,Eric Arseneault,20.0
+2023,LDVP - 2023,11,NOV (18),11,18.0,2023-11-18,Eric Arseneault,Eric Arseneault,60.0
+2023,LDVP - 2023,8,AOUT (26),8,26.0,2023-08-26,Charles Duguay,Dakota Cameron,60.0
+2023,LDVP - 2023,11,NOV (18),11,18.0,2023-11-18,Eric Arseneault,Dakota Cameron,20.0
+2023,LDVP - 2023,1,JAN (21),1,21.0,2023-01-21,Eric Arseneault,Charles Duguay,60.0
+2023,LDVP - 2023,2,FEV (11),2,11.0,2023-02-11,Sebastien Claude,Charles Duguay,60.0
+2023,LDVP - 2023,3,MAR (18),3,18.0,2023-03-18,Charles Duguay,Charles Duguay,20.0
+2023,LDVP - 2023,5,MAY  (6),5,6.0,2023-05-06,Martin Allard,Charles Duguay,20.0
+2023,LDVP - 2023,6,JUIN (10),6,10.0,2023-06-10,Maxime Duguay,Charles Duguay,20.0
+2023,LDVP - 2023,8,AOUT (26),8,26.0,2023-08-26,Charles Duguay,Charles Duguay,100.0
+2023,LDVP - 2023,10,OCT (21),10,21.0,2023-10-21,Dany MacDonald,Charles Duguay,60.0
+2023,LDVP - 2023,11,NOV (18),11,18.0,2023-11-18,Eric Arseneault,Charles Duguay,20.0
+2023,LDVP - 2023,3,MAR (18),3,18.0,2023-03-18,Charles Duguay,Maxime Duguay,40.0
+2023,LDVP - 2023,6,JUIN (10),6,10.0,2023-06-10,Maxime Duguay,Maxime Duguay,40.0
+2023,LDVP - 2023,11,NOV (18),11,18.0,2023-11-18,Eric Arseneault,Maxime Duguay,40.0
+2023,LDVP - 2023,1,JAN (21),1,21.0,2023-01-21,Eric Arseneault,Andre Laurin,60.0
+2023,LDVP - 2023,6,JUIN (10),6,10.0,2023-06-10,Maxime Duguay,Andre Laurin,60.0
+2023,LDVP - 2023,10,OCT (21),10,21.0,2023-10-21,Dany MacDonald,Andre Laurin,40.0
+2023,LDVP - 2023,11,NOV (18),11,18.0,2023-11-18,Eric Arseneault,Andre Laurin,20.0
+2023,LDVP - 2023,1,JAN (21),1,21.0,2023-01-21,Eric Arseneault,Serge Duguay,40.0
+2023,LDVP - 2023,3,MAR (18),3,18.0,2023-03-18,Charles Duguay,Serge Duguay,40.0
+2023,LDVP - 2023,5,MAY  (6),5,6.0,2023-05-06,Martin Allard,Serge Duguay,40.0
+2023,LDVP - 2023,6,JUIN (10),6,10.0,2023-06-10,Maxime Duguay,Serge Duguay,20.0
+2023,LDVP - 2023,11,NOV (18),11,18.0,2023-11-18,Eric Arseneault,Serge Duguay,60.0
+2023,LDVP - 2023,11,NOV (18),11,18.0,2023-11-18,Eric Arseneault,Daniel Arseneault,20.0
+2023,LDVP - 2023,2,FEV (11),2,11.0,2023-02-11,Sebastien Claude,Don Wagner,40.0
+2023,LDVP - 2023,3,MAR (18),3,18.0,2023-03-18,Charles Duguay,Don Wagner,20.0
+2023,LDVP - 2023,5,MAY  (6),5,6.0,2023-05-06,Martin Allard,Don Wagner,40.0
+2023,LDVP - 2023,8,AOUT (26),8,26.0,2023-08-26,Charles Duguay,Don Wagner,20.0
+2023,LDVP - 2023,10,OCT (21),10,21.0,2023-10-21,Dany MacDonald,Don Wagner,40.0
+2023,LDVP - 2023,11,NOV (18),11,18.0,2023-11-18,Eric Arseneault,Don Wagner,80.0
+2023,LDVP - 2023,12,DEC (9),12,9.0,2023-12-09,,Don Wagner,20.0
+2023,LDVP - 2023,5,MAY  (6),5,6.0,2023-05-06,Martin Allard,Gervais Allard,20.0
+2023,LDVP - 2023,2,FEV (11),2,11.0,2023-02-11,Sebastien Claude,Mathieu Arsenault,20.0
+2023,LDVP - 2023,6,JUIN (10),6,10.0,2023-06-10,Maxime Duguay,Mathieu Arsenault,20.0
+2023,LDVP - 2023,11,NOV (18),11,18.0,2023-11-18,Eric Arseneault,Mathieu Arsenault,20.0
+2023,LDVP - 2023,12,DEC (9),12,9.0,2023-12-09,,Rod Stevula,60.0
+2023,LDVP - 2023,1,JAN (21),1,21.0,2023-01-21,Eric Arseneault,Sylvain Gagné,60.0
+2023,LDVP - 2023,2,FEV (11),2,11.0,2023-02-11,Sebastien Claude,Sylvain Gagné,60.0
+2023,LDVP - 2023,5,MAY  (6),5,6.0,2023-05-06,Martin Allard,Sylvain Gagné,60.0
+2023,LDVP - 2023,8,AOUT (26),8,26.0,2023-08-26,Charles Duguay,Sylvain Gagné,20.0
+2023,LDVP - 2023,12,DEC (9),12,9.0,2023-12-09,,Sylvain Gagné,40.0
+2023,LDVP - 2023,1,JAN (21),1,21.0,2023-01-21,Eric Arseneault,Rob McConnell,80.0
+2023,LDVP - 2023,2,FEV (11),2,11.0,2023-02-11,Sebastien Claude,Rob McConnell,80.0
+2023,LDVP - 2023,3,MAR (18),3,18.0,2023-03-18,Charles Duguay,Rob McConnell,20.0
+2023,LDVP - 2023,6,JUIN (10),6,10.0,2023-06-10,Maxime Duguay,Rob McConnell,20.0
+2023,LDVP - 2023,8,AOUT (26),8,26.0,2023-08-26,Charles Duguay,Rob McConnell,80.0
+2023,LDVP - 2023,10,OCT (21),10,21.0,2023-10-21,Dany MacDonald,Rob McConnell,40.0
+2023,LDVP - 2023,11,NOV (18),11,18.0,2023-11-18,Eric Arseneault,Rob McConnell,40.0
+2023,LDVP - 2023,2,FEV (11),2,11.0,2023-02-11,Sebastien Claude,Eric Godin,40.0
+2023,LDVP - 2023,6,JUIN (10),6,10.0,2023-06-10,Maxime Duguay,Eric Godin,40.0
+2023,LDVP - 2023,8,AOUT (26),8,26.0,2023-08-26,Charles Duguay,Eric Godin,40.0
+2023,LDVP - 2023,10,OCT (21),10,21.0,2023-10-21,Dany MacDonald,Eric Godin,40.0
+2023,LDVP - 2023,12,DEC (9),12,9.0,2023-12-09,,Eric Godin,40.0
+2023,LDVP - 2023,2,FEV (11),2,11.0,2023-02-11,Sebastien Claude,Sebastien Claude,60.0
+2023,LDVP - 2023,3,MAR (18),3,18.0,2023-03-18,Charles Duguay,Emile Gallant,60.0
+2023,LDVP - 2023,5,MAY  (6),5,6.0,2023-05-06,Martin Allard,Emile Gallant,60.0
+2023,LDVP - 2023,8,AOUT (26),8,26.0,2023-08-26,Charles Duguay,Emile Gallant,80.0
+2023,LDVP - 2023,10,OCT (21),10,21.0,2023-10-21,Dany MacDonald,Emile Gallant,40.0
+2023,LDVP - 2023,1,JAN (21),1,21.0,2023-01-21,Eric Arseneault,Alex Robert,20.0
+2023,LDVP - 2023,2,FEV (11),2,11.0,2023-02-11,Sebastien Claude,Alex Robert,20.0
+2023,LDVP - 2023,5,MAY  (6),5,6.0,2023-05-06,Martin Allard,Alex Robert,20.0
+2023,LDVP - 2023,8,AOUT (26),8,26.0,2023-08-26,Charles Duguay,Alex Robert,40.0
+2023,LDVP - 2023,10,OCT (21),10,21.0,2023-10-21,Dany MacDonald,Alex Robert,40.0
+2023,LDVP - 2023,11,NOV (18),11,18.0,2023-11-18,Eric Arseneault,Alex Robert,60.0
+2023,LDVP - 2023,12,DEC (9),12,9.0,2023-12-09,,Alex Robert,40.0
+2023,LDVP - 2023,1,JAN (21),1,21.0,2023-01-21,Eric Arseneault,Clement Monnier,20.0
+2023,LDVP - 2023,3,MAR (18),3,18.0,2023-03-18,Charles Duguay,Clement Monnier,40.0
+2023,LDVP - 2023,5,MAY  (6),5,6.0,2023-05-06,Martin Allard,Clement Monnier,60.0
+2023,LDVP - 2023,6,JUIN (10),6,10.0,2023-06-10,Maxime Duguay,Clement Monnier,40.0
+2023,LDVP - 2023,8,AOUT (26),8,26.0,2023-08-26,Charles Duguay,Clement Monnier,20.0
+2023,LDVP - 2023,1,JAN (21),1,21.0,2023-01-21,Eric Arseneault,James Goudreau,20.0
+2023,LDVP - 2023,10,OCT (21),10,21.0,2023-10-21,Dany MacDonald,Nicholas Brugali,40.0
+2023,LDVP - 2023,11,NOV (18),11,18.0,2023-11-18,Eric Arseneault,Nicholas Brugali,60.0
+2023,LDVP - 2023,12,DEC (9),12,9.0,2023-12-09,,Nicholas Brugali,20.0
+2023,LDVP - 2023,10,OCT (21),10,21.0,2023-10-21,Dany MacDonald,Steve Doucette,60.0
+2022,LDVP - 2022,2,FEV (26),2,26.0,2022-02-26,Eric Arseneault,Dany MacDonald,20.0
+2022,LDVP - 2022,3,MAR (26),3,26.0,2022-03-26,Eric Godin,Dany MacDonald,20.0
+2022,LDVP - 2022,4,AVR (30),4,30.0,2022-04-30,Dany MacDonald,Dany MacDonald,20.0
+2022,LDVP - 2022,5,MAY  (18),5,18.0,2022-05-18,Andre Laurin,Dany MacDonald,80.0
+2022,LDVP - 2022,10,OCT (15),10,15.0,2022-10-15,Dany MacDonald,Dany MacDonald,20.0
+2022,LDVP - 2022,11,NOV (26),11,26.0,2022-11-26,Martin Allard,Dany MacDonald,40.0
+2022,LDVP - 2022,12,DEC (21),12,21.0,2022-12-21,,Dany MacDonald,20.0
+2022,LDVP - 2022,2,FEV (26),2,26.0,2022-02-26,Eric Arseneault,Martin Allard,20.0
+2022,LDVP - 2022,4,AVR (30),4,30.0,2022-04-30,Dany MacDonald,Martin Allard,20.0
+2022,LDVP - 2022,7,JUI (23),7,23.0,2022-07-23,Martin Allard,Martin Allard,20.0
+2022,LDVP - 2022,10,OCT (15),10,15.0,2022-10-15,Dany MacDonald,Martin Allard,40.0
+2022,LDVP - 2022,11,NOV (26),11,26.0,2022-11-26,Martin Allard,Martin Allard,40.0
+2022,LDVP - 2022,12,DEC (21),12,21.0,2022-12-21,,Martin Allard,40.0
+2022,LDVP - 2022,2,FEV (26),2,26.0,2022-02-26,Eric Arseneault,Eric Arseneault,60.0
+2022,LDVP - 2022,3,MAR (26),3,26.0,2022-03-26,Eric Godin,Eric Arseneault,40.0
+2022,LDVP - 2022,7,JUI (23),7,23.0,2022-07-23,Martin Allard,Eric Arseneault,40.0
+2022,LDVP - 2022,10,OCT (15),10,15.0,2022-10-15,Dany MacDonald,Eric Arseneault,20.0
+2022,LDVP - 2022,11,NOV (26),11,26.0,2022-11-26,Martin Allard,Eric Arseneault,40.0
+2022,LDVP - 2022,2,FEV (26),2,26.0,2022-02-26,Eric Arseneault,Dakota Cameron,60.0
+2022,LDVP - 2022,2,FEV (26),2,26.0,2022-02-26,Eric Arseneault,Charles Duguay,80.0
+2022,LDVP - 2022,4,AVR (30),4,30.0,2022-04-30,Dany MacDonald,Charles Duguay,40.0
+2022,LDVP - 2022,5,MAY  (18),5,18.0,2022-05-18,Andre Laurin,Charles Duguay,60.0
+2022,LDVP - 2022,7,JUI (23),7,23.0,2022-07-23,Martin Allard,Charles Duguay,80.0
+2022,LDVP - 2022,10,OCT (15),10,15.0,2022-10-15,Dany MacDonald,Charles Duguay,40.0
+2022,LDVP - 2022,11,NOV (26),11,26.0,2022-11-26,Martin Allard,Charles Duguay,40.0
+2022,LDVP - 2022,12,DEC (21),12,21.0,2022-12-21,,Charles Duguay,80.0
+2022,LDVP - 2022,3,MAR (26),3,26.0,2022-03-26,Eric Godin,Maxime Duguay,40.0
+2022,LDVP - 2022,4,AVR (30),4,30.0,2022-04-30,Dany MacDonald,Maxime Duguay,40.0
+2022,LDVP - 2022,10,OCT (15),10,15.0,2022-10-15,Dany MacDonald,Maxime Duguay,40.0
+2022,LDVP - 2022,11,NOV (26),11,26.0,2022-11-26,Martin Allard,Maxime Duguay,20.0
+2022,LDVP - 2022,12,DEC (21),12,21.0,2022-12-21,,Maxime Duguay,20.0
+2022,LDVP - 2022,3,MAR (26),3,26.0,2022-03-26,Eric Godin,Andre Laurin,40.0
+2022,LDVP - 2022,4,AVR (30),4,30.0,2022-04-30,Dany MacDonald,Andre Laurin,60.0
+2022,LDVP - 2022,5,MAY  (18),5,18.0,2022-05-18,Andre Laurin,Andre Laurin,40.0
+2022,LDVP - 2022,11,NOV (26),11,26.0,2022-11-26,Martin Allard,Andre Laurin,60.0
+2022,LDVP - 2022,12,DEC (21),12,21.0,2022-12-21,,Andre Laurin,60.0
+2022,LDVP - 2022,2,FEV (26),2,26.0,2022-02-26,Eric Arseneault,Serge Duguay,40.0
+2022,LDVP - 2022,4,AVR (30),4,30.0,2022-04-30,Dany MacDonald,Serge Duguay,20.0
+2022,LDVP - 2022,10,OCT (15),10,15.0,2022-10-15,Dany MacDonald,Serge Duguay,40.0
+2022,LDVP - 2022,3,MAR (26),3,26.0,2022-03-26,Eric Godin,Daniel Arseneault,20.0
+2022,LDVP - 2022,4,AVR (30),4,30.0,2022-04-30,Dany MacDonald,Daniel Arseneault,20.0
+2022,LDVP - 2022,12,DEC (21),12,21.0,2022-12-21,,Daniel Arseneault,20.0
+2022,LDVP - 2022,2,FEV (26),2,26.0,2022-02-26,Eric Arseneault,Don Wagner,20.0
+2022,LDVP - 2022,3,MAR (26),3,26.0,2022-03-26,Eric Godin,Don Wagner,60.0
+2022,LDVP - 2022,5,MAY  (18),5,18.0,2022-05-18,Andre Laurin,Don Wagner,40.0
+2022,LDVP - 2022,7,JUI (23),7,23.0,2022-07-23,Martin Allard,Don Wagner,20.0
+2022,LDVP - 2022,11,NOV (26),11,26.0,2022-11-26,Martin Allard,Gervais Allard,20.0
+2022,LDVP - 2022,4,AVR (30),4,30.0,2022-04-30,Dany MacDonald,Rod Stevula,40.0
+2022,LDVP - 2022,12,DEC (21),12,21.0,2022-12-21,,Rod Stevula,40.0
+2022,LDVP - 2022,2,FEV (26),2,26.0,2022-02-26,Eric Arseneault,Sylvain Gagné,40.0
+2022,LDVP - 2022,3,MAR (26),3,26.0,2022-03-26,Eric Godin,Sylvain Gagné,60.0
+2022,LDVP - 2022,5,MAY  (18),5,18.0,2022-05-18,Andre Laurin,Sylvain Gagné,20.0
+2022,LDVP - 2022,11,NOV (26),11,26.0,2022-11-26,Martin Allard,Sylvain Gagné,20.0
+2022,LDVP - 2022,12,DEC (21),12,21.0,2022-12-21,,Sylvain Gagné,20.0
+2022,LDVP - 2022,5,MAY  (18),5,18.0,2022-05-18,Andre Laurin,Rob McConnell,60.0
+2022,LDVP - 2022,7,JUI (23),7,23.0,2022-07-23,Martin Allard,Rob McConnell,60.0
+2022,LDVP - 2022,11,NOV (26),11,26.0,2022-11-26,Martin Allard,Rob McConnell,60.0
+2022,LDVP - 2022,3,MAR (26),3,26.0,2022-03-26,Eric Godin,Eric Godin,60.0
+2022,LDVP - 2022,4,AVR (30),4,30.0,2022-04-30,Dany MacDonald,Eric Godin,20.0
+2022,LDVP - 2022,12,DEC (21),12,21.0,2022-12-21,,Eric Godin,20.0
+2022,LDVP - 2022,5,MAY  (18),5,18.0,2022-05-18,Andre Laurin,Sebastien Claude,20.0
+2022,LDVP - 2022,10,OCT (15),10,15.0,2022-10-15,Dany MacDonald,Sebastien Claude,40.0
+2022,LDVP - 2022,10,OCT (15),10,15.0,2022-10-15,Dany MacDonald,Emile Gallant,40.0
+2022,LDVP - 2022,11,NOV (26),11,26.0,2022-11-26,Martin Allard,Emile Gallant,40.0
+2022,LDVP - 2022,12,DEC (21),12,21.0,2022-12-21,,Emile Gallant,80.0
+2022,LDVP - 2022,10,OCT (15),10,15.0,2022-10-15,Dany MacDonald,Alex Robert,60.0
+2022,LDVP - 2022,11,NOV (26),11,26.0,2022-11-26,Martin Allard,Alex Robert,20.0
+2022,LDVP - 2022,12,DEC (21),12,21.0,2022-12-21,,Alex Robert,40.0
+2022,LDVP - 2022,10,OCT (15),10,15.0,2022-10-15,Dany MacDonald,Clement Monnier,20.0
+2021,LDVP - 2021,1,JAN (23),1,23.0,2021-01-23,Dany MacDonald,Dany MacDonald,20.0
+2021,LDVP - 2021,2,FEV (20),2,20.0,2021-02-20,Eric Arseneault,Dany MacDonald,20.0
+2021,LDVP - 2021,3,MAR (20),3,20.0,2021-03-20,Andre Laurin,Dany MacDonald,40.0
+2021,LDVP - 2021,4,AVR (17),4,17.0,2021-04-17,Dakota Cameron,Dany MacDonald,60.0
+2021,LDVP - 2021,8,AOUT,8,,,,Dany MacDonald,60.0
+2021,LDVP - 2021,9,SEPT (19),9,19.0,2021-09-19,Don Wagner,Dany MacDonald,20.0
+2021,LDVP - 2021,11,NOV (21),11,21.0,2021-11-21,Martin Allard,Dany MacDonald,40.0
+2021,LDVP - 2021,6,JUIN (29),6,29.0,2021-06-29,,Martin Allard,60.0
+2021,LDVP - 2021,8,AOUT,8,,,,Martin Allard,100.0
+2021,LDVP - 2021,10,OCT,10,,,Andre Laurin,Martin Allard,40.0
+2021,LDVP - 2021,11,NOV (21),11,21.0,2021-11-21,Martin Allard,Martin Allard,20.0
+2021,LDVP - 2021,1,JAN (23),1,23.0,2021-01-23,Dany MacDonald,Eric Arseneault,40.0
+2021,LDVP - 2021,2,FEV (20),2,20.0,2021-02-20,Eric Arseneault,Eric Arseneault,40.0
+2021,LDVP - 2021,3,MAR (20),3,20.0,2021-03-20,Andre Laurin,Eric Arseneault,40.0
+2021,LDVP - 2021,4,AVR (17),4,17.0,2021-04-17,Dakota Cameron,Eric Arseneault,40.0
+2021,LDVP - 2021,8,AOUT,8,,,,Eric Arseneault,40.0
+2021,LDVP - 2021,9,SEPT (19),9,19.0,2021-09-19,Don Wagner,Eric Arseneault,40.0
+2021,LDVP - 2021,10,OCT,10,,,Andre Laurin,Eric Arseneault,20.0
+2021,LDVP - 2021,12,DEC (21),12,21.0,2021-12-21,Rob McConnell,Eric Arseneault,40.0
+2021,LDVP - 2021,3,MAR (20),3,20.0,2021-03-20,Andre Laurin,Dakota Cameron,20.0
+2021,LDVP - 2021,4,AVR (17),4,17.0,2021-04-17,Dakota Cameron,Dakota Cameron,20.0
+2021,LDVP - 2021,6,JUIN (29),6,29.0,2021-06-29,,Dakota Cameron,40.0
+2021,LDVP - 2021,10,OCT,10,,,Andre Laurin,Dakota Cameron,20.0
+2021,LDVP - 2021,12,DEC (21),12,21.0,2021-12-21,Rob McConnell,Dakota Cameron,40.0
+2021,LDVP - 2021,1,JAN (23),1,23.0,2021-01-23,Dany MacDonald,Charles Duguay,80.0
+2021,LDVP - 2021,2,FEV (20),2,20.0,2021-02-20,Eric Arseneault,Charles Duguay,20.0
+2021,LDVP - 2021,4,AVR (17),4,17.0,2021-04-17,Dakota Cameron,Charles Duguay,20.0
+2021,LDVP - 2021,6,JUIN (29),6,29.0,2021-06-29,,Charles Duguay,20.0
+2021,LDVP - 2021,8,AOUT,8,,,,Charles Duguay,60.0
+2021,LDVP - 2021,9,SEPT (19),9,19.0,2021-09-19,Don Wagner,Charles Duguay,40.0
+2021,LDVP - 2021,10,OCT,10,,,Andre Laurin,Charles Duguay,80.0
+2021,LDVP - 2021,11,NOV (21),11,21.0,2021-11-21,Martin Allard,Charles Duguay,20.0
+2021,LDVP - 2021,12,DEC (21),12,21.0,2021-12-21,Rob McConnell,Charles Duguay,60.0
+2021,LDVP - 2021,2,FEV (20),2,20.0,2021-02-20,Eric Arseneault,Maxime Duguay,20.0
+2021,LDVP - 2021,3,MAR (20),3,20.0,2021-03-20,Andre Laurin,Maxime Duguay,40.0
+2021,LDVP - 2021,4,AVR (17),4,17.0,2021-04-17,Dakota Cameron,Maxime Duguay,40.0
+2021,LDVP - 2021,6,JUIN (29),6,29.0,2021-06-29,,Maxime Duguay,40.0
+2021,LDVP - 2021,8,AOUT,8,,,,Maxime Duguay,20.0
+2021,LDVP - 2021,10,OCT,10,,,Andre Laurin,Maxime Duguay,40.0
+2021,LDVP - 2021,11,NOV (21),11,21.0,2021-11-21,Martin Allard,Maxime Duguay,20.0
+2021,LDVP - 2021,12,DEC (21),12,21.0,2021-12-21,Rob McConnell,Maxime Duguay,20.0
+2021,LDVP - 2021,1,JAN (23),1,23.0,2021-01-23,Dany MacDonald,Andre Laurin,40.0
+2021,LDVP - 2021,3,MAR (20),3,20.0,2021-03-20,Andre Laurin,Andre Laurin,20.0
+2021,LDVP - 2021,4,AVR (17),4,17.0,2021-04-17,Dakota Cameron,Andre Laurin,60.0
+2021,LDVP - 2021,6,JUIN (29),6,29.0,2021-06-29,,Andre Laurin,20.0
+2021,LDVP - 2021,8,AOUT,8,,,,Andre Laurin,20.0
+2021,LDVP - 2021,9,SEPT (19),9,19.0,2021-09-19,Don Wagner,Andre Laurin,40.0
+2021,LDVP - 2021,10,OCT,10,,,Andre Laurin,Andre Laurin,20.0
+2021,LDVP - 2021,11,NOV (21),11,21.0,2021-11-21,Martin Allard,Andre Laurin,20.0
+2021,LDVP - 2021,12,DEC (21),12,21.0,2021-12-21,Rob McConnell,Andre Laurin,60.0
+2021,LDVP - 2021,1,JAN (23),1,23.0,2021-01-23,Dany MacDonald,Serge Duguay,40.0
+2021,LDVP - 2021,2,FEV (20),2,20.0,2021-02-20,Eric Arseneault,Serge Duguay,40.0
+2021,LDVP - 2021,3,MAR (20),3,20.0,2021-03-20,Andre Laurin,Serge Duguay,40.0
+2021,LDVP - 2021,4,AVR (17),4,17.0,2021-04-17,Dakota Cameron,Serge Duguay,40.0
+2021,LDVP - 2021,6,JUIN (29),6,29.0,2021-06-29,,Serge Duguay,40.0
+2021,LDVP - 2021,9,SEPT (19),9,19.0,2021-09-19,Don Wagner,Serge Duguay,40.0
+2021,LDVP - 2021,10,OCT,10,,,Andre Laurin,Serge Duguay,20.0
+2021,LDVP - 2021,11,NOV (21),11,21.0,2021-11-21,Martin Allard,Serge Duguay,40.0
+2021,LDVP - 2021,3,MAR (20),3,20.0,2021-03-20,Andre Laurin,Daniel Arseneault,80.0
+2021,LDVP - 2021,10,OCT,10,,,Andre Laurin,Daniel Arseneault,40.0
+2021,LDVP - 2021,1,JAN (23),1,23.0,2021-01-23,Dany MacDonald,Don Wagner,20.0
+2021,LDVP - 2021,2,FEV (20),2,20.0,2021-02-20,Eric Arseneault,Don Wagner,20.0
+2021,LDVP - 2021,3,MAR (20),3,20.0,2021-03-20,Andre Laurin,Don Wagner,20.0
+2021,LDVP - 2021,4,AVR (17),4,17.0,2021-04-17,Dakota Cameron,Don Wagner,20.0
+2021,LDVP - 2021,8,AOUT,8,,,,Don Wagner,40.0
+2021,LDVP - 2021,9,SEPT (19),9,19.0,2021-09-19,Don Wagner,Don Wagner,40.0
+2021,LDVP - 2021,10,OCT,10,,,Andre Laurin,Don Wagner,40.0
+2021,LDVP - 2021,11,NOV (21),11,21.0,2021-11-21,Martin Allard,Don Wagner,80.0
+2021,LDVP - 2021,12,DEC (21),12,21.0,2021-12-21,Rob McConnell,Don Wagner,20.0
+2021,LDVP - 2021,1,JAN (23),1,23.0,2021-01-23,Dany MacDonald,Mathieu Arsenault,20.0
+2021,LDVP - 2021,4,AVR (17),4,17.0,2021-04-17,Dakota Cameron,Mathieu Arsenault,40.0
+2021,LDVP - 2021,10,OCT,10,,,Andre Laurin,Mathieu Arsenault,40.0
+2021,LDVP - 2021,2,FEV (20),2,20.0,2021-02-20,Eric Arseneault,Rod Stevula,60.0
+2021,LDVP - 2021,3,MAR (20),3,20.0,2021-03-20,Andre Laurin,Rod Stevula,40.0
+2021,LDVP - 2021,6,JUIN (29),6,29.0,2021-06-29,,Rod Stevula,40.0
+2021,LDVP - 2021,3,MAR (20),3,20.0,2021-03-20,Andre Laurin,Travis Saunders,60.0
+2021,LDVP - 2021,4,AVR (17),4,17.0,2021-04-17,Dakota Cameron,Travis Saunders,20.0
+2021,LDVP - 2021,6,JUIN (29),6,29.0,2021-06-29,,Travis Saunders,60.0
+2021,LDVP - 2021,4,AVR (17),4,17.0,2021-04-17,Dakota Cameron,Sylvain Gagné,40.0
+2021,LDVP - 2021,12,DEC (21),12,21.0,2021-12-21,Rob McConnell,Sylvain Gagné,20.0
+2021,LDVP - 2021,6,JUIN (29),6,29.0,2021-06-29,,Rob McConnell,20.0
+2021,LDVP - 2021,8,AOUT,8,,,,Rob McConnell,40.0
+2021,LDVP - 2021,9,SEPT (19),9,19.0,2021-09-19,Don Wagner,Rob McConnell,20.0
+2021,LDVP - 2021,10,OCT,10,,,Andre Laurin,Rob McConnell,40.0
+2021,LDVP - 2021,11,NOV (21),11,21.0,2021-11-21,Martin Allard,Rob McConnell,80.0
+2021,LDVP - 2021,12,DEC (21),12,21.0,2021-12-21,Rob McConnell,Rob McConnell,120.0
+2020,LDVP - 2020,1,JAN (18),1,18.0,2020-01-18,Dany MacDonald,Dany MacDonald,60.0
+2020,LDVP - 2020,2,FEV (22),2,22.0,2020-02-22,Eric Arseneault,Dany MacDonald,40.0
+2020,LDVP - 2020,9,SEPT (26),9,26.0,2020-09-26,Eric Arseneault,Dany MacDonald,60.0
+2020,LDVP - 2020,10,OCT,10,,,Charles Duguay,Dany MacDonald,80.0
+2020,LDVP - 2020,11,NOV (16),11,16.0,2020-11-16,Don Wagner,Dany MacDonald,40.0
+2020,LDVP - 2020,12,DEC (27),12,27.0,2020-12-27,Dany MacDonald,Dany MacDonald,60.0
+2020,LDVP - 2020,1,JAN (18),1,18.0,2020-01-18,Dany MacDonald,Martin Allard,20.0
+2020,LDVP - 2020,2,FEV (22),2,22.0,2020-02-22,Eric Arseneault,Martin Allard,20.0
+2020,LDVP - 2020,1,JAN (18),1,18.0,2020-01-18,Dany MacDonald,Eric Arseneault,20.0
+2020,LDVP - 2020,2,FEV (22),2,22.0,2020-02-22,Eric Arseneault,Eric Arseneault,40.0
+2020,LDVP - 2020,9,SEPT (26),9,26.0,2020-09-26,Eric Arseneault,Eric Arseneault,20.0
+2020,LDVP - 2020,10,OCT,10,,,Charles Duguay,Eric Arseneault,20.0
+2020,LDVP - 2020,11,NOV (16),11,16.0,2020-11-16,Don Wagner,Eric Arseneault,40.0
+2020,LDVP - 2020,12,DEC (27),12,27.0,2020-12-27,Dany MacDonald,Eric Arseneault,20.0
+2020,LDVP - 2020,1,JAN (18),1,18.0,2020-01-18,Dany MacDonald,Dakota Cameron,60.0
+2020,LDVP - 2020,9,SEPT (26),9,26.0,2020-09-26,Eric Arseneault,Dakota Cameron,40.0
+2020,LDVP - 2020,1,JAN (18),1,18.0,2020-01-18,Dany MacDonald,Charles Duguay,40.0
+2020,LDVP - 2020,2,FEV (22),2,22.0,2020-02-22,Eric Arseneault,Charles Duguay,40.0
+2020,LDVP - 2020,9,SEPT (26),9,26.0,2020-09-26,Eric Arseneault,Charles Duguay,20.0
+2020,LDVP - 2020,10,OCT,10,,,Charles Duguay,Charles Duguay,60.0
+2020,LDVP - 2020,11,NOV (16),11,16.0,2020-11-16,Don Wagner,Charles Duguay,40.0
+2020,LDVP - 2020,12,DEC (27),12,27.0,2020-12-27,Dany MacDonald,Charles Duguay,60.0
+2020,LDVP - 2020,1,JAN (18),1,18.0,2020-01-18,Dany MacDonald,Maxime Duguay,20.0
+2020,LDVP - 2020,9,SEPT (26),9,26.0,2020-09-26,Eric Arseneault,Maxime Duguay,20.0
+2020,LDVP - 2020,10,OCT,10,,,Charles Duguay,Maxime Duguay,20.0
+2020,LDVP - 2020,11,NOV (16),11,16.0,2020-11-16,Don Wagner,Maxime Duguay,40.0
+2020,LDVP - 2020,2,FEV (22),2,22.0,2020-02-22,Eric Arseneault,Andre Laurin,20.0
+2020,LDVP - 2020,9,SEPT (26),9,26.0,2020-09-26,Eric Arseneault,Andre Laurin,40.0
+2020,LDVP - 2020,10,OCT,10,,,Charles Duguay,Andre Laurin,20.0
+2020,LDVP - 2020,11,NOV (16),11,16.0,2020-11-16,Don Wagner,Andre Laurin,40.0
+2020,LDVP - 2020,12,DEC (27),12,27.0,2020-12-27,Dany MacDonald,Andre Laurin,40.0
+2020,LDVP - 2020,1,JAN (18),1,18.0,2020-01-18,Dany MacDonald,Serge Duguay,20.0
+2020,LDVP - 2020,2,FEV (22),2,22.0,2020-02-22,Eric Arseneault,Serge Duguay,20.0
+2020,LDVP - 2020,10,OCT,10,,,Charles Duguay,Serge Duguay,20.0
+2020,LDVP - 2020,12,DEC (27),12,27.0,2020-12-27,Dany MacDonald,Serge Duguay,60.0
+2020,LDVP - 2020,10,OCT,10,,,Charles Duguay,Daniel Arseneault,20.0
+2020,LDVP - 2020,12,DEC (27),12,27.0,2020-12-27,Dany MacDonald,Daniel Arseneault,20.0
+2020,LDVP - 2020,2,FEV (22),2,22.0,2020-02-22,Eric Arseneault,Don Wagner,60.0
+2020,LDVP - 2020,10,OCT,10,,,Charles Duguay,Don Wagner,40.0
+2020,LDVP - 2020,11,NOV (16),11,16.0,2020-11-16,Don Wagner,Don Wagner,20.0
+2020,LDVP - 2020,12,DEC (27),12,27.0,2020-12-27,Dany MacDonald,Don Wagner,20.0
+2020,LDVP - 2020,2,FEV (22),2,22.0,2020-02-22,Eric Arseneault,Mathieu Arsenault,20.0
+2020,LDVP - 2020,1,JAN (18),1,18.0,2020-01-18,Dany MacDonald,Rod Stevula,40.0
+2020,LDVP - 2020,1,JAN (18),1,18.0,2020-01-18,Dany MacDonald,Jesse Cameron,40.0
+2020,LDVP - 2020,9,SEPT (26),9,26.0,2020-09-26,Eric Arseneault,Jesse Cameron,60.0
+2020,LDVP - 2020,1,JAN (18),1,18.0,2020-01-18,Dany MacDonald,Matthieu Tremblay,20.0
+2020,LDVP - 2020,2,FEV (22),2,22.0,2020-02-22,Eric Arseneault,Matthieu Tremblay,20.0
+2020,LDVP - 2020,1,JAN (18),1,18.0,2020-01-18,Dany MacDonald,Alex Brousseau,20.0
+2020,LDVP - 2020,10,OCT,10,,,Charles Duguay,Travis Saunders,20.0
+2020,LDVP - 2020,12,DEC (27),12,27.0,2020-12-27,Dany MacDonald,Travis Saunders,20.0
+2020,LDVP - 2020,10,OCT,10,,,Charles Duguay,Jean-Eude Duguay,20.0
+2019,LDVP - 2019,1,JAN (19),1,19.0,2019-01-19,Andre Laurin,Dany MacDonald,20.0
+2019,LDVP - 2019,2,FEV (23),2,23.0,2019-02-23,Dany MacDonald,Dany MacDonald,80.0
+2019,LDVP - 2019,4,AVR (27),4,27.0,2019-04-27,Serge Duguay,Dany MacDonald,40.0
+2019,LDVP - 2019,5,MAY  (18),5,18.0,2019-05-18,Dakota Cameron,Dany MacDonald,20.0
+2019,LDVP - 2019,6,JUIN (29),6,29.0,2019-06-29,Riley Cameron,Dany MacDonald,40.0
+2019,LDVP - 2019,8,AOUT,8,,,Eric Arseneault,Dany MacDonald,20.0
+2019,LDVP - 2019,9,SEPT,9,,,Don Wagner,Dany MacDonald,20.0
+2019,LDVP - 2019,10,OCT,10,,,Martin Allard,Dany MacDonald,20.0
+2019,LDVP - 2019,11,NOV (16),11,16.0,2019-11-16,Riley Cameron,Dany MacDonald,20.0
+2019,LDVP - 2019,12,DEC,12,,,Adam Doucette,Dany MacDonald,40.0
+2019,LDVP - 2019,1,JAN (19),1,19.0,2019-01-19,Andre Laurin,Martin Allard,60.0
+2019,LDVP - 2019,2,FEV (23),2,23.0,2019-02-23,Dany MacDonald,Martin Allard,40.0
+2019,LDVP - 2019,3,MAR (30),3,30.0,2019-03-30,Martin Allard,Martin Allard,20.0
+2019,LDVP - 2019,4,AVR (27),4,27.0,2019-04-27,Serge Duguay,Martin Allard,60.0
+2019,LDVP - 2019,6,JUIN (29),6,29.0,2019-06-29,Riley Cameron,Martin Allard,20.0
+2019,LDVP - 2019,8,AOUT,8,,,Eric Arseneault,Martin Allard,20.0
+2019,LDVP - 2019,9,SEPT,9,,,Don Wagner,Martin Allard,60.0
+2019,LDVP - 2019,10,OCT,10,,,Martin Allard,Martin Allard,40.0
+2019,LDVP - 2019,11,NOV (16),11,16.0,2019-11-16,Riley Cameron,Martin Allard,20.0
+2019,LDVP - 2019,12,DEC,12,,,Adam Doucette,Martin Allard,40.0
+2019,LDVP - 2019,1,JAN (19),1,19.0,2019-01-19,Andre Laurin,Eric Arseneault,20.0
+2019,LDVP - 2019,3,MAR (30),3,30.0,2019-03-30,Martin Allard,Eric Arseneault,20.0
+2019,LDVP - 2019,4,AVR (27),4,27.0,2019-04-27,Serge Duguay,Eric Arseneault,40.0
+2019,LDVP - 2019,6,JUIN (29),6,29.0,2019-06-29,Riley Cameron,Eric Arseneault,40.0
+2019,LDVP - 2019,8,AOUT,8,,,Eric Arseneault,Eric Arseneault,40.0
+2019,LDVP - 2019,11,NOV (16),11,16.0,2019-11-16,Riley Cameron,Eric Arseneault,40.0
+2019,LDVP - 2019,1,JAN (19),1,19.0,2019-01-19,Andre Laurin,Dakota Cameron,60.0
+2019,LDVP - 2019,3,MAR (30),3,30.0,2019-03-30,Martin Allard,Dakota Cameron,40.0
+2019,LDVP - 2019,4,AVR (27),4,27.0,2019-04-27,Serge Duguay,Dakota Cameron,20.0
+2019,LDVP - 2019,5,MAY  (18),5,18.0,2019-05-18,Dakota Cameron,Dakota Cameron,20.0
+2019,LDVP - 2019,9,SEPT,9,,,Don Wagner,Dakota Cameron,20.0
+2019,LDVP - 2019,11,NOV (16),11,16.0,2019-11-16,Riley Cameron,Dakota Cameron,60.0
+2019,LDVP - 2019,12,DEC,12,,,Adam Doucette,Dakota Cameron,60.0
+2019,LDVP - 2019,4,AVR (27),4,27.0,2019-04-27,Serge Duguay,Riley Cameron,20.0
+2019,LDVP - 2019,6,JUIN (29),6,29.0,2019-06-29,Riley Cameron,Riley Cameron,20.0
+2019,LDVP - 2019,10,OCT,10,,,Martin Allard,Riley Cameron,40.0
+2019,LDVP - 2019,11,NOV (16),11,16.0,2019-11-16,Riley Cameron,Riley Cameron,60.0
+2019,LDVP - 2019,12,DEC,12,,,Adam Doucette,Riley Cameron,40.0
+2019,LDVP - 2019,1,JAN (19),1,19.0,2019-01-19,Andre Laurin,Charles Duguay,40.0
+2019,LDVP - 2019,2,FEV (23),2,23.0,2019-02-23,Dany MacDonald,Charles Duguay,40.0
+2019,LDVP - 2019,3,MAR (30),3,30.0,2019-03-30,Martin Allard,Charles Duguay,40.0
+2019,LDVP - 2019,5,MAY  (18),5,18.0,2019-05-18,Dakota Cameron,Charles Duguay,40.0
+2019,LDVP - 2019,9,SEPT,9,,,Don Wagner,Charles Duguay,60.0
+2019,LDVP - 2019,11,NOV (16),11,16.0,2019-11-16,Riley Cameron,Charles Duguay,40.0
+2019,LDVP - 2019,12,DEC,12,,,Adam Doucette,Charles Duguay,40.0
+2019,LDVP - 2019,4,AVR (27),4,27.0,2019-04-27,Serge Duguay,Maxime Duguay,20.0
+2019,LDVP - 2019,9,SEPT,9,,,Don Wagner,Maxime Duguay,40.0
+2019,LDVP - 2019,11,NOV (16),11,16.0,2019-11-16,Riley Cameron,Maxime Duguay,40.0
+2019,LDVP - 2019,1,JAN (19),1,19.0,2019-01-19,Andre Laurin,Andre Laurin,20.0
+2019,LDVP - 2019,2,FEV (23),2,23.0,2019-02-23,Dany MacDonald,Andre Laurin,60.0
+2019,LDVP - 2019,3,MAR (30),3,30.0,2019-03-30,Martin Allard,Andre Laurin,80.0
+2019,LDVP - 2019,4,AVR (27),4,27.0,2019-04-27,Serge Duguay,Andre Laurin,40.0
+2019,LDVP - 2019,5,MAY  (18),5,18.0,2019-05-18,Dakota Cameron,Andre Laurin,40.0
+2019,LDVP - 2019,6,JUIN (29),6,29.0,2019-06-29,Riley Cameron,Andre Laurin,20.0
+2019,LDVP - 2019,8,AOUT,8,,,Eric Arseneault,Andre Laurin,40.0
+2019,LDVP - 2019,9,SEPT,9,,,Don Wagner,Andre Laurin,60.0
+2019,LDVP - 2019,10,OCT,10,,,Martin Allard,Andre Laurin,40.0
+2019,LDVP - 2019,11,NOV (16),11,16.0,2019-11-16,Riley Cameron,Andre Laurin,40.0
+2019,LDVP - 2019,12,DEC,12,,,Adam Doucette,Andre Laurin,20.0
+2019,LDVP - 2019,1,JAN (19),1,19.0,2019-01-19,Andre Laurin,Serge Duguay,20.0
+2019,LDVP - 2019,2,FEV (23),2,23.0,2019-02-23,Dany MacDonald,Serge Duguay,20.0
+2019,LDVP - 2019,3,MAR (30),3,30.0,2019-03-30,Martin Allard,Serge Duguay,20.0
+2019,LDVP - 2019,4,AVR (27),4,27.0,2019-04-27,Serge Duguay,Serge Duguay,20.0
+2019,LDVP - 2019,5,MAY  (18),5,18.0,2019-05-18,Dakota Cameron,Serge Duguay,20.0
+2019,LDVP - 2019,6,JUIN (29),6,29.0,2019-06-29,Riley Cameron,Serge Duguay,20.0
+2019,LDVP - 2019,9,SEPT,9,,,Don Wagner,Serge Duguay,20.0
+2019,LDVP - 2019,11,NOV (16),11,16.0,2019-11-16,Riley Cameron,Serge Duguay,20.0
+2019,LDVP - 2019,12,DEC,12,,,Adam Doucette,Serge Duguay,20.0
+2019,LDVP - 2019,2,FEV (23),2,23.0,2019-02-23,Dany MacDonald,Daniel Arseneault,80.0
+2019,LDVP - 2019,3,MAR (30),3,30.0,2019-03-30,Martin Allard,Daniel Arseneault,40.0
+2019,LDVP - 2019,10,OCT,10,,,Martin Allard,Daniel Arseneault,20.0
+2019,LDVP - 2019,11,NOV (16),11,16.0,2019-11-16,Riley Cameron,Daniel Arseneault,40.0
+2019,LDVP - 2019,1,JAN (19),1,19.0,2019-01-19,Andre Laurin,Don Wagner,60.0
+2019,LDVP - 2019,2,FEV (23),2,23.0,2019-02-23,Dany MacDonald,Don Wagner,20.0
+2019,LDVP - 2019,3,MAR (30),3,30.0,2019-03-30,Martin Allard,Don Wagner,40.0
+2019,LDVP - 2019,4,AVR (27),4,27.0,2019-04-27,Serge Duguay,Don Wagner,60.0
+2019,LDVP - 2019,5,MAY  (18),5,18.0,2019-05-18,Dakota Cameron,Don Wagner,60.0
+2019,LDVP - 2019,6,JUIN (29),6,29.0,2019-06-29,Riley Cameron,Don Wagner,20.0
+2019,LDVP - 2019,8,AOUT,8,,,Eric Arseneault,Don Wagner,20.0
+2019,LDVP - 2019,9,SEPT,9,,,Don Wagner,Don Wagner,20.0
+2019,LDVP - 2019,10,OCT,10,,,Martin Allard,Don Wagner,40.0
+2019,LDVP - 2019,11,NOV (16),11,16.0,2019-11-16,Riley Cameron,Don Wagner,20.0
+2019,LDVP - 2019,12,DEC,12,,,Adam Doucette,Don Wagner,40.0
+2019,LDVP - 2019,3,MAR (30),3,30.0,2019-03-30,Martin Allard,Gervais Allard,40.0
+2019,LDVP - 2019,2,FEV (23),2,23.0,2019-02-23,Dany MacDonald,Adam Doucette,20.0
+2019,LDVP - 2019,9,SEPT,9,,,Don Wagner,Adam Doucette,40.0
+2019,LDVP - 2019,12,DEC,12,,,Adam Doucette,Adam Doucette,40.0
+2019,LDVP - 2019,11,NOV (16),11,16.0,2019-11-16,Riley Cameron,Mathieu Arsenault,20.0
+2019,LDVP - 2019,2,FEV (23),2,23.0,2019-02-23,Dany MacDonald,Rod Stevula,20.0
+2019,LDVP - 2019,4,AVR (27),4,27.0,2019-04-27,Serge Duguay,Rod Stevula,40.0
+2019,LDVP - 2019,8,AOUT,8,,,Eric Arseneault,Rod Stevula,40.0
+2019,LDVP - 2019,9,SEPT,9,,,Don Wagner,Rod Stevula,40.0
+2019,LDVP - 2019,11,NOV (16),11,16.0,2019-11-16,Riley Cameron,Rod Stevula,20.0
+2019,LDVP - 2019,11,NOV (16),11,16.0,2019-11-16,Riley Cameron,Jean Benoit,60.0
+2019,LDVP - 2019,1,JAN (19),1,19.0,2019-01-19,Andre Laurin,Jesse Cameron,40.0
+2019,LDVP - 2019,2,FEV (23),2,23.0,2019-02-23,Dany MacDonald,Jesse Cameron,20.0
+2019,LDVP - 2019,3,MAR (30),3,30.0,2019-03-30,Martin Allard,Jesse Cameron,20.0
+2019,LDVP - 2019,4,AVR (27),4,27.0,2019-04-27,Serge Duguay,Jesse Cameron,40.0
+2019,LDVP - 2019,11,NOV (16),11,16.0,2019-11-16,Riley Cameron,Jesse Cameron,40.0
+2019,LDVP - 2019,12,DEC,12,,,Adam Doucette,Jesse Cameron,40.0
+2019,LDVP - 2019,10,OCT,10,,,Martin Allard,Matthieu Tremblay,20.0
+2019,LDVP - 2019,11,NOV (16),11,16.0,2019-11-16,Riley Cameron,Matthieu Tremblay,20.0
+2019,LDVP - 2019,10,OCT,10,,,Martin Allard,Alex Brousseau,40.0
+2019,LDVP - 2019,11,NOV (16),11,16.0,2019-11-16,Riley Cameron,Alex Brousseau,80.0
+2019,LDVP - 2019,12,DEC,12,,,Adam Doucette,Alex Brousseau,80.0
+2018,LDVP - 2018,1,JAN (26),1,26.0,2018-01-26,Dany,Dany MacDonald,20.0
+2018,LDVP - 2018,2,FEV (10),2,10.0,2018-02-10,Andre,Dany MacDonald,40.0
+2018,LDVP - 2018,3,MAR (16),3,16.0,2018-03-16,Charles,Dany MacDonald,20.0
+2018,LDVP - 2018,4,AVR (21),4,21.0,2018-04-21,Martin,Dany MacDonald,40.0
+2018,LDVP - 2018,5,MAY (26),5,26.0,2018-05-26,Adam,Dany MacDonald,20.0
+2018,LDVP - 2018,6,JUIN,6,,,Don,Dany MacDonald,20.0
+2018,LDVP - 2018,7,JUI,7,,,Max,Dany MacDonald,40.0
+2018,LDVP - 2018,8,AOUT (24),8,24.0,2018-08-24,Martin,Dany MacDonald,40.0
+2018,LDVP - 2018,9,SEPT (29),9,29.0,2018-09-29,Dany,Dany MacDonald,20.0
+2018,LDVP - 2018,10,OCT (20),10,20.0,2018-10-20,Eric,Dany MacDonald,60.0
+2018,LDVP - 2018,11,NOV (17),11,17.0,2018-11-17,Charles,Dany MacDonald,20.0
+2018,LDVP - 2018,12,DEC (8),12,8.0,2018-12-08,Don,Dany MacDonald,20.0
+2018,LDVP - 2018,1,JAN (26),1,26.0,2018-01-26,Dany,Martin Allard,40.0
+2018,LDVP - 2018,2,FEV (10),2,10.0,2018-02-10,Andre,Martin Allard,60.0
+2018,LDVP - 2018,3,MAR (16),3,16.0,2018-03-16,Charles,Martin Allard,80.0
+2018,LDVP - 2018,4,AVR (21),4,21.0,2018-04-21,Martin,Martin Allard,40.0
+2018,LDVP - 2018,5,MAY (26),5,26.0,2018-05-26,Adam,Martin Allard,40.0
+2018,LDVP - 2018,6,JUIN,6,,,Don,Martin Allard,80.0
+2018,LDVP - 2018,7,JUI,7,,,Max,Martin Allard,20.0
+2018,LDVP - 2018,8,AOUT (24),8,24.0,2018-08-24,Martin,Martin Allard,40.0
+2018,LDVP - 2018,9,SEPT (29),9,29.0,2018-09-29,Dany,Martin Allard,60.0
+2018,LDVP - 2018,10,OCT (20),10,20.0,2018-10-20,Eric,Martin Allard,20.0
+2018,LDVP - 2018,11,NOV (17),11,17.0,2018-11-17,Charles,Martin Allard,40.0
+2018,LDVP - 2018,12,DEC (8),12,8.0,2018-12-08,Don,Martin Allard,80.0
+2018,LDVP - 2018,1,JAN (26),1,26.0,2018-01-26,Dany,Eric Arseneault,20.0
+2018,LDVP - 2018,2,FEV (10),2,10.0,2018-02-10,Andre,Eric Arseneault,40.0
+2018,LDVP - 2018,3,MAR (16),3,16.0,2018-03-16,Charles,Eric Arseneault,20.0
+2018,LDVP - 2018,4,AVR (21),4,21.0,2018-04-21,Martin,Eric Arseneault,20.0
+2018,LDVP - 2018,5,MAY (26),5,26.0,2018-05-26,Adam,Eric Arseneault,40.0
+2018,LDVP - 2018,6,JUIN,6,,,Don,Eric Arseneault,40.0
+2018,LDVP - 2018,9,SEPT (29),9,29.0,2018-09-29,Dany,Eric Arseneault,40.0
+2018,LDVP - 2018,10,OCT (20),10,20.0,2018-10-20,Eric,Eric Arseneault,20.0
+2018,LDVP - 2018,11,NOV (17),11,17.0,2018-11-17,Charles,Eric Arseneault,20.0
+2018,LDVP - 2018,12,DEC (8),12,8.0,2018-12-08,Don,Eric Arseneault,40.0
+2018,LDVP - 2018,1,JAN (26),1,26.0,2018-01-26,Dany,Dakota Cameron,20.0
+2018,LDVP - 2018,2,FEV (10),2,10.0,2018-02-10,Andre,Dakota Cameron,60.0
+2018,LDVP - 2018,3,MAR (16),3,16.0,2018-03-16,Charles,Dakota Cameron,20.0
+2018,LDVP - 2018,4,AVR (21),4,21.0,2018-04-21,Martin,Dakota Cameron,60.0
+2018,LDVP - 2018,5,MAY (26),5,26.0,2018-05-26,Adam,Dakota Cameron,20.0
+2018,LDVP - 2018,8,AOUT (24),8,24.0,2018-08-24,Martin,Dakota Cameron,40.0
+2018,LDVP - 2018,9,SEPT (29),9,29.0,2018-09-29,Dany,Dakota Cameron,20.0
+2018,LDVP - 2018,10,OCT (20),10,20.0,2018-10-20,Eric,Dakota Cameron,60.0
+2018,LDVP - 2018,11,NOV (17),11,17.0,2018-11-17,Charles,Dakota Cameron,60.0
+2018,LDVP - 2018,12,DEC (8),12,8.0,2018-12-08,Don,Dakota Cameron,40.0
+2018,LDVP - 2018,1,JAN (26),1,26.0,2018-01-26,Dany,Riley Cameron,60.0
+2018,LDVP - 2018,3,MAR (16),3,16.0,2018-03-16,Charles,Riley Cameron,20.0
+2018,LDVP - 2018,4,AVR (21),4,21.0,2018-04-21,Martin,Riley Cameron,40.0
+2018,LDVP - 2018,12,DEC (8),12,8.0,2018-12-08,Don,Riley Cameron,20.0
+2018,LDVP - 2018,1,JAN (26),1,26.0,2018-01-26,Dany,Charles Duguay,20.0
+2018,LDVP - 2018,2,FEV (10),2,10.0,2018-02-10,Andre,Charles Duguay,40.0
+2018,LDVP - 2018,3,MAR (16),3,16.0,2018-03-16,Charles,Charles Duguay,60.0
+2018,LDVP - 2018,4,AVR (21),4,21.0,2018-04-21,Martin,Charles Duguay,60.0
+2018,LDVP - 2018,5,MAY (26),5,26.0,2018-05-26,Adam,Charles Duguay,60.0
+2018,LDVP - 2018,6,JUIN,6,,,Don,Charles Duguay,40.0
+2018,LDVP - 2018,8,AOUT (24),8,24.0,2018-08-24,Martin,Charles Duguay,60.0
+2018,LDVP - 2018,9,SEPT (29),9,29.0,2018-09-29,Dany,Charles Duguay,60.0
+2018,LDVP - 2018,10,OCT (20),10,20.0,2018-10-20,Eric,Charles Duguay,20.0
+2018,LDVP - 2018,11,NOV (17),11,17.0,2018-11-17,Charles,Charles Duguay,60.0
+2018,LDVP - 2018,12,DEC (8),12,8.0,2018-12-08,Don,Charles Duguay,60.0
+2018,LDVP - 2018,1,JAN (26),1,26.0,2018-01-26,Dany,Maxime Duguay,20.0
+2018,LDVP - 2018,2,FEV (10),2,10.0,2018-02-10,Andre,Maxime Duguay,20.0
+2018,LDVP - 2018,3,MAR (16),3,16.0,2018-03-16,Charles,Maxime Duguay,20.0
+2018,LDVP - 2018,5,MAY (26),5,26.0,2018-05-26,Adam,Maxime Duguay,20.0
+2018,LDVP - 2018,6,JUIN,6,,,Don,Maxime Duguay,20.0
+2018,LDVP - 2018,7,JUI,7,,,Max,Maxime Duguay,20.0
+2018,LDVP - 2018,8,AOUT (24),8,24.0,2018-08-24,Martin,Maxime Duguay,20.0
+2018,LDVP - 2018,9,SEPT (29),9,29.0,2018-09-29,Dany,Maxime Duguay,20.0
+2018,LDVP - 2018,12,DEC (8),12,8.0,2018-12-08,Don,Maxime Duguay,20.0
+2018,LDVP - 2018,1,JAN (26),1,26.0,2018-01-26,Dany,Andre Laurin,40.0
+2018,LDVP - 2018,2,FEV (10),2,10.0,2018-02-10,Andre,Andre Laurin,20.0
+2018,LDVP - 2018,3,MAR (16),3,16.0,2018-03-16,Charles,Andre Laurin,80.0
+2018,LDVP - 2018,4,AVR (21),4,21.0,2018-04-21,Martin,Andre Laurin,40.0
+2018,LDVP - 2018,5,MAY (26),5,26.0,2018-05-26,Adam,Andre Laurin,60.0
+2018,LDVP - 2018,6,JUIN,6,,,Don,Andre Laurin,20.0
+2018,LDVP - 2018,7,JUI,7,,,Max,Andre Laurin,60.0
+2018,LDVP - 2018,8,AOUT (24),8,24.0,2018-08-24,Martin,Andre Laurin,40.0
+2018,LDVP - 2018,10,OCT (20),10,20.0,2018-10-20,Eric,Andre Laurin,60.0
+2018,LDVP - 2018,11,NOV (17),11,17.0,2018-11-17,Charles,Andre Laurin,80.0
+2018,LDVP - 2018,12,DEC (8),12,8.0,2018-12-08,Don,Andre Laurin,40.0
+2018,LDVP - 2018,3,MAR (16),3,16.0,2018-03-16,Charles,Serge Duguay,20.0
+2018,LDVP - 2018,5,MAY (26),5,26.0,2018-05-26,Adam,Serge Duguay,20.0
+2018,LDVP - 2018,7,JUI,7,,,Max,Serge Duguay,20.0
+2018,LDVP - 2018,9,SEPT (29),9,29.0,2018-09-29,Dany,Serge Duguay,20.0
+2018,LDVP - 2018,10,OCT (20),10,20.0,2018-10-20,Eric,Serge Duguay,20.0
+2018,LDVP - 2018,12,DEC (8),12,8.0,2018-12-08,Don,Serge Duguay,20.0
+2018,LDVP - 2018,10,OCT (20),10,20.0,2018-10-20,Eric,Daniel Arseneault,60.0
+2018,LDVP - 2018,1,JAN (26),1,26.0,2018-01-26,Dany,Don Wagner,20.0
+2018,LDVP - 2018,2,FEV (10),2,10.0,2018-02-10,Andre,Don Wagner,80.0
+2018,LDVP - 2018,3,MAR (16),3,16.0,2018-03-16,Charles,Don Wagner,40.0
+2018,LDVP - 2018,6,JUIN,6,,,Don,Don Wagner,20.0
+2018,LDVP - 2018,8,AOUT (24),8,24.0,2018-08-24,Martin,Don Wagner,40.0
+2018,LDVP - 2018,9,SEPT (29),9,29.0,2018-09-29,Dany,Don Wagner,20.0
+2018,LDVP - 2018,10,OCT (20),10,20.0,2018-10-20,Eric,Don Wagner,80.0
+2018,LDVP - 2018,12,DEC (8),12,8.0,2018-12-08,Don,Don Wagner,40.0
+2018,LDVP - 2018,1,JAN (26),1,26.0,2018-01-26,Dany,Gervais Allard,20.0
+2018,LDVP - 2018,4,AVR (21),4,21.0,2018-04-21,Martin,Gervais Allard,60.0
+2018,LDVP - 2018,8,AOUT (24),8,24.0,2018-08-24,Martin,Gervais Allard,80.0
+2018,LDVP - 2018,11,NOV (17),11,17.0,2018-11-17,Charles,Gervais Allard,40.0
+2018,LDVP - 2018,2,FEV (10),2,10.0,2018-02-10,Andre,Adam Doucette,60.0
+2018,LDVP - 2018,5,MAY (26),5,26.0,2018-05-26,Adam,Adam Doucette,20.0
+2018,LDVP - 2018,7,JUI,7,,,Max,Adam Doucette,60.0
+2018,LDVP - 2018,3,MAR (16),3,16.0,2018-03-16,Charles,Mathieu Arsenault,40.0
+2018,LDVP - 2018,4,AVR (21),4,21.0,2018-04-21,Martin,Mathieu Arsenault,40.0
+2018,LDVP - 2018,6,JUIN,6,,,Don,Mathieu Arsenault,40.0
+2018,LDVP - 2018,9,SEPT (29),9,29.0,2018-09-29,Dany,Mathieu Arsenault,20.0
+2018,LDVP - 2018,12,DEC (8),12,8.0,2018-12-08,Don,Mathieu Arsenault,20.0
+2018,LDVP - 2018,6,JUIN,6,,,Don,Rod Stevula,20.0
+2018,LDVP - 2018,9,SEPT (29),9,29.0,2018-09-29,Dany,Rod Stevula,20.0
+2018,LDVP - 2018,12,DEC (8),12,8.0,2018-12-08,Don,Rod Stevula,40.0
+2018,LDVP - 2018,6,JUIN,6,,,Don,Jean Benoit,40.0
+2018,LDVP - 2018,7,JUI,7,,,Max,Jean Benoit,60.0
+2018,LDVP - 2018,8,AOUT (24),8,24.0,2018-08-24,Martin,Jean Benoit,40.0
+2018,LDVP - 2018,10,OCT (20),10,20.0,2018-10-20,Eric,Jean Benoit,40.0
+2018,LDVP - 2018,12,DEC (8),12,8.0,2018-12-08,Don,Jean Benoit,20.0

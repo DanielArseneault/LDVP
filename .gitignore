@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+
+data_upload_staging/
+data_upload_staging_test/
+data_backups/
+backup/
+
+*.log
+streamlit*.out.log
+streamlit*.err.log
+
+.streamlit/secrets.toml
