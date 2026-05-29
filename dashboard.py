@@ -44,6 +44,21 @@ METRICS = {
     "Bubbles": "bubbles",
 }
 
+MONTH_LABELS = {
+    1: "JAN",
+    2: "FEV",
+    3: "MAR",
+    4: "AVR",
+    5: "MAY",
+    6: "JUIN",
+    7: "JUI",
+    8: "AOUT",
+    9: "SEPT",
+    10: "OCT",
+    11: "NOV",
+    12: "DEC",
+}
+
 RANKING_METRIC_ALIASES = {
     "gain": "Net gain",
     "gains": "Net gain",
@@ -180,6 +195,16 @@ st.markdown(
         font-family: "Segoe UI", system-ui, sans-serif;
         font-size: 1.85rem !important;
         font-weight: 700;
+        line-height: 1.12 !important;
+        overflow: visible !important;
+        white-space: normal !important;
+        word-break: normal;
+        overflow-wrap: anywhere;
+    }
+    [data-testid="stMetricValue"] > div {
+        overflow: visible !important;
+        text-overflow: unset !important;
+        white-space: normal !important;
     }
     .leader-card {
         background: linear-gradient(135deg, rgba(19, 36, 58, 0.98), rgba(13, 25, 43, 0.98));
@@ -213,6 +238,7 @@ st.markdown(
         font-size: clamp(1.25rem, 1.8vw, 1.65rem);
         font-weight: 750;
         line-height: 1.12;
+        white-space: normal;
         overflow-wrap: anywhere;
     }
     .leader-amount {
@@ -350,10 +376,154 @@ st.markdown(
         color: var(--text) !important;
         font-weight: 700 !important;
     }
+    .metric-bar-cell {
+        align-items: center;
+        display: grid;
+        gap: 0.55rem;
+        grid-template-columns: minmax(170px, 1fr) 4.5rem;
+        min-width: 250px;
+    }
+    .metric-bar-track {
+        background: rgba(32, 53, 83, 0.55);
+        border-radius: 999px;
+        height: 0.72rem;
+        overflow: hidden;
+        position: relative;
+    }
+    .metric-bar-track::before {
+        background: rgba(142, 162, 189, 0.38);
+        content: "";
+        height: 100%;
+        left: 50%;
+        position: absolute;
+        top: 0;
+        width: 1px;
+        z-index: 2;
+    }
+    .metric-bar-fill {
+        border-radius: 999px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+    .metric-bar-fill.positive {
+        background: var(--green);
+        left: 50%;
+    }
+    .metric-bar-fill.negative {
+        background: var(--orange);
+        right: 50%;
+    }
+    .metric-bar-fill.positive-only {
+        background: var(--green);
+        left: 0;
+    }
+    .metric-bar-fill.negative-only {
+        background: var(--orange);
+        right: 0;
+    }
+    .metric-bar-value {
+        color: var(--text);
+        font-weight: 700;
+        text-align: right;
+        white-space: nowrap;
+    }
+    .event-detail-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        margin: 0.5rem 0 1rem;
+    }
+    .event-detail-card {
+        background: linear-gradient(135deg, rgba(19, 36, 58, 0.98), rgba(13, 25, 43, 0.98));
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        box-shadow: 0 16px 36px rgba(0, 0, 0, 0.22);
+        min-height: 112px;
+        padding: 1rem 1.05rem 1.25rem;
+        position: relative;
+    }
+    .event-detail-card::after {
+        background: linear-gradient(90deg, var(--cyan), var(--magenta));
+        border-radius: 999px;
+        bottom: 0.65rem;
+        content: "";
+        height: 2px;
+        left: 1rem;
+        position: absolute;
+        width: 58px;
+    }
+    .event-detail-label {
+        color: var(--muted);
+        font-size: 0.8rem;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+    }
+    .event-detail-value {
+        color: var(--text);
+        font-size: clamp(1.05rem, 1.55vw, 1.55rem);
+        font-weight: 750;
+        line-height: 1.14;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
     </style>
     """,
     unsafe_allow_html=True,
 )
+
+
+def int_or_none(value: object) -> int | None:
+    if pd.isna(value):
+        return None
+    try:
+        return int(float(value))
+    except (TypeError, ValueError):
+        return None
+
+
+def normalize_event_label(row: pd.Series) -> str:
+    month = int_or_none(row.get("event_month"))
+    day = int_or_none(row.get("event_day"))
+
+    if month not in MONTH_LABELS or day is None:
+        parsed_date = pd.to_datetime(row.get("event_date"), errors="coerce")
+        if not pd.isna(parsed_date):
+            month = int(parsed_date.month)
+            day = int(parsed_date.day)
+
+    if month in MONTH_LABELS:
+        label = MONTH_LABELS[month]
+        return f"{label} ({day})" if day is not None else label
+
+    raw_label = row.get("event_label")
+    if pd.isna(raw_label):
+        event_order = int_or_none(row.get("event_order"))
+        return f"Event {event_order}" if event_order is not None else "Event"
+    return " ".join(str(raw_label).split())
+
+
+def normalize_event_tables(tables: dict[str, pd.DataFrame]) -> None:
+    events = tables.get("events")
+    if events is None or events.empty or "event_label" not in events.columns:
+        return
+
+    events["event_label"] = events.apply(normalize_event_label, axis=1)
+
+    lookup_columns = ["year", "event_order", "event_label"]
+    if not set(lookup_columns).issubset(events.columns):
+        return
+
+    event_label_lookup = events[lookup_columns].drop_duplicates(["year", "event_order"])
+    for table_name in ("event_buyins", "event_positions", "event_payouts"):
+        table = tables.get(table_name)
+        if table is None or table.empty or not {"year", "event_order"}.issubset(table.columns):
+            continue
+        if "event_label" in table.columns:
+            table = table.drop(columns=["event_label"])
+        tables[table_name] = table.merge(event_label_lookup, on=["year", "event_order"], how="left")
 
 
 @st.cache_data
@@ -385,6 +555,7 @@ def load_tables() -> dict[str, pd.DataFrame]:
     for table in ("event_buyins", "event_positions", "event_payouts", "events"):
         if "event_date" in tables[table].columns:
             tables[table]["event_date"] = pd.to_datetime(tables[table]["event_date"], errors="coerce")
+    normalize_event_tables(tables)
     return tables
 
 
@@ -404,6 +575,15 @@ def pct(value: float | int | None) -> str:
     if pd.isna(value):
         return "-"
     return f"{value:.0%}"
+
+
+def display_date(value: object) -> str:
+    if pd.isna(value):
+        return "-"
+    parsed = pd.to_datetime(value, errors="coerce")
+    if pd.isna(parsed):
+        return str(value)
+    return parsed.strftime("%Y-%m-%d")
 
 
 def style_chart(chart: alt.Chart) -> alt.Chart:
@@ -496,7 +676,7 @@ def player_anchor(player: object) -> str:
         return ""
     player_name = str(player)
     return (
-        f'<a class="player-link" href="?player={quote(player_name)}">'
+        f'<a class="player-link" href="?player={quote(player_name)}" target="_self">'
         f"{html.escape(player_name)}</a>"
     )
 
@@ -548,14 +728,50 @@ def format_table_value(value: object, column: str) -> str:
     return html.escape(str(value))
 
 
-def styled_table(df: pd.DataFrame, player_column: str | None = None, max_rows: int | None = None) -> None:
+def metric_bar(value: object, min_value: float, max_value: float, column: str) -> str:
+    if pd.isna(value):
+        return ""
+    number_value = float(value)
+    max_abs = max(abs(min_value), abs(max_value))
+    if min_value >= 0 and max_value > 0:
+        width = min(number_value / max_value * 100, 100)
+        direction = "positive-only"
+    elif max_value <= 0 and min_value < 0:
+        width = min(abs(number_value) / abs(min_value) * 100, 100)
+        direction = "negative-only"
+    elif max_abs <= 0:
+        width = 0
+        direction = "positive"
+    else:
+        width = min(abs(number_value) / max_abs * 50, 50)
+        direction = "positive" if number_value >= 0 else "negative"
+    formatted_value = format_table_value(number_value, column)
+    return (
+        '<div class="metric-bar-cell">'
+        '<div class="metric-bar-track">'
+        f'<div class="metric-bar-fill {direction}" style="width: {width:.2f}%;"></div>'
+        "</div>"
+        f'<span class="metric-bar-value">{formatted_value}</span>'
+        "</div>"
+    )
+
+
+def styled_table(
+    df: pd.DataFrame,
+    player_column: str | None = None,
+    max_rows: int | None = None,
+    html_columns: set[str] | None = None,
+) -> None:
     table = df.head(max_rows).copy() if max_rows else df.copy()
+    trusted_html_columns = html_columns or set()
     headers = "".join(f"<th>{html.escape(format_column_label(column))}</th>" for column in table.columns)
     rows = []
     for _, row in table.iterrows():
         cells = []
         for column in table.columns:
-            if player_column and column == player_column:
+            if str(column) in trusted_html_columns:
+                value = str(row[column]) if not pd.isna(row[column]) else ""
+            elif player_column and column == player_column:
                 value = player_anchor(row[column])
             else:
                 value = format_table_value(row[column], str(column))
@@ -570,6 +786,56 @@ def styled_table(df: pd.DataFrame, player_column: str | None = None, max_rows: i
 
 def linked_player_table(df: pd.DataFrame, player_column: str, max_rows: int | None = None) -> None:
     styled_table(df, player_column=player_column, max_rows=max_rows)
+
+
+def event_details_table(event_results: pd.DataFrame) -> None:
+    if event_results.empty:
+        st.info("No player results are available for this event.")
+        return
+
+    result_cols = ["position", "player", "buyin", "payout", "net"]
+    details_table = event_results[result_cols].sort_values(["position", "net"], ascending=[True, False])
+    event_net = details_table["net"].dropna()
+    min_event_net = float(event_net.min()) if not event_net.empty else 0
+    max_event_net = float(event_net.max()) if not event_net.empty else 0
+    details_table["net"] = details_table["net"].apply(
+        lambda value: metric_bar(value, min_event_net, max_event_net, "net")
+    )
+    details_table = details_table.rename(
+        columns={
+            "position": "Position",
+            "player": "Player",
+            "buyin": "Buy-In",
+            "payout": "Payout",
+            "net": "Net",
+        }
+    )
+    styled_table(details_table, player_column="Player", html_columns={"Net"})
+
+
+def detail_card(label: str, value: object) -> str:
+    return (
+        '<div class="event-detail-card">'
+        f'<div class="event-detail-label">{html.escape(label)}</div>'
+        f'<div class="event-detail-value">{html.escape(str(value))}</div>'
+        "</div>"
+    )
+
+
+def render_event_detail(event: pd.Series, event_results: pd.DataFrame) -> None:
+    event_host = event.get("host")
+    event_host = event_host if not pd.isna(event_host) else "-"
+
+    cards = [
+        detail_card("Event", event.get("event_label", "-")),
+        detail_card("Date", display_date(event.get("event_date"))),
+        detail_card("Host", event_host),
+        detail_card("Prize Pool", money(event.get("pot_total"))),
+        detail_card("Players", number(event.get("player_count"))),
+        detail_card("Paid Places", number(event.get("payout_count"))),
+    ]
+    st.markdown(f'<div class="event-detail-grid">{"".join(cards)}</div>', unsafe_allow_html=True)
+    event_details_table(event_results)
 
 
 def query_value(name: str) -> str | None:
@@ -782,7 +1048,12 @@ default_metric_index = list(available_metrics.keys()).index(default_metric_label
 
 year_events = events[events["year"] == selected_year].copy()
 year_results = event_results[event_results["year"] == selected_year].copy()
-completed_events = year_events[year_events["player_count"].fillna(0) > 0]
+completed_events = year_events[year_events["player_count"].fillna(0) > 0].copy()
+completed_event_orders = set(completed_events["event_order"].dropna().astype(int))
+if completed_event_orders:
+    year_results = year_results[year_results["event_order"].isin(completed_event_orders)].copy()
+else:
+    year_results = year_results.iloc[0:0].copy()
 
 if "pot_total" in completed_events.columns and completed_events["pot_total"].notna().any():
     total_prize_pool = completed_events["pot_total"].fillna(0).sum()
@@ -897,46 +1168,41 @@ overview_tab, players_tab, events_tab, lifetime_tab, data_tab = st.tabs(
 )
 
 with overview_tab:
-    col1, col2 = st.columns([1.2, 1])
-    with col1:
-        metric_col_control, title_col, _ = st.columns([0.22, 0.36, 0.42])
-        with metric_col_control:
-            metric_label = st.selectbox(
-                "Leaderboard metric",
-                list(available_metrics.keys()),
-                index=default_metric_index,
-                key=f"leaderboard_metric_{selected_year}",
-                label_visibility="collapsed",
-            )
-        with title_col:
-            st.subheader(f"{selected_year} Leaderboard")
-        metric_col = available_metrics[metric_label]
-        leaderboard = year_stats.dropna(subset=[metric_col]).sort_values(metric_col, ascending=False)
-        if not leaderboard.empty:
-            leaderboard_rows = len(leaderboard.head(20))
-            st.markdown(f'<div style="height: {TABLE_HEADER_HEIGHT}px;"></div>', unsafe_allow_html=True)
-            diverging_bar(
-                leaderboard.head(20),
-                metric_col,
-                "player",
-                metric_label,
-                height=leaderboard_rows * LEADERBOARD_ROW_HEIGHT,
-            )
-        else:
-            st.info(f"No {metric_label.lower()} data is available for the current filters.")
-
-    with col2:
+    table_title_col, metric_col_control, _ = st.columns([0.22, 0.16, 0.62], gap="small")
+    with table_title_col:
         st.subheader("Official Standings")
-        year_ranking_display = year_ranking[["rank", "player", "ranking_metric", "gain", "gap"]].rename(
-            columns={
-                "rank": "Rank",
-                "player": "Player",
-                "ranking_metric": "Ranked by",
-                "gain": "Value",
-                "gap": "Gap",
-            }
+    with metric_col_control:
+        metric_label = st.selectbox(
+            "Leaderboard metric",
+            list(available_metrics.keys()),
+            index=default_metric_index,
+            key=f"leaderboard_metric_{selected_year}",
+            label_visibility="collapsed",
         )
-        linked_player_table(year_ranking_display, "Player", max_rows=20)
+
+    metric_col = available_metrics[metric_label]
+    metric_values = year_stats[["player", metric_col]].copy() if metric_col in year_stats.columns else pd.DataFrame()
+    year_ranking_display = year_ranking[["rank", "player", "ranking_metric", "gap"]].copy()
+    if not metric_values.empty:
+        year_ranking_display = year_ranking_display.merge(metric_values, on="player", how="left")
+    else:
+        year_ranking_display[metric_col] = None
+    metric_series = year_ranking_display[metric_col].dropna()
+    min_metric_value = float(metric_series.min()) if not metric_series.empty else 0
+    max_metric_value = float(metric_series.max()) if not metric_series.empty else 0
+    year_ranking_display[metric_col] = year_ranking_display[metric_col].apply(
+        lambda value: metric_bar(value, min_metric_value, max_metric_value, metric_col)
+    )
+    year_ranking_display = year_ranking_display.rename(
+        columns={
+            "rank": "Rank",
+            "player": "Player",
+            "ranking_metric": "Ranked by",
+            metric_col: metric_label,
+            "gap": "Gap",
+        }
+    )
+    styled_table(year_ranking_display, player_column="Player", max_rows=20, html_columns={metric_label})
 
 with players_tab:
     st.subheader(f"{selected_year} Player Table")
@@ -982,7 +1248,7 @@ with players_tab:
 
 with events_tab:
     st.subheader(f"{selected_year} Event Summary")
-    event_display = year_events[
+    event_display = completed_events[
         [
             "event_order",
             "event_label",
@@ -993,40 +1259,55 @@ with events_tab:
             "payout_count",
         ]
     ].sort_values("event_order")
-    styled_table(event_display)
+    event_display = event_display.reset_index(drop=True)
+    if event_display.empty:
+        st.info("No completed events are available for this year.")
+    else:
+        styled_table(event_display)
 
-    col1, col2 = st.columns(2)
-    with col1:
-        st.subheader("Pot Size")
-        pot_chart = (
-            alt.Chart(year_events)
-            .mark_bar(color="#2dd489")
-            .encode(
-                x=alt.X("event_label:N", sort=list(year_events.sort_values("event_order")["event_label"]), title=None),
-                y=alt.Y("pot_total:Q", title="Pot"),
-                tooltip=["event_label", "event_date", "host", "pot_total", "player_count"],
-            )
-            .properties(height=320)
-        )
-        st.altair_chart(style_chart(pot_chart), use_container_width=True)
-    with col2:
-        st.subheader("Player Count")
-        players_chart = (
-            alt.Chart(year_events)
-            .mark_line(point=True, color="#f02fa6")
-            .encode(
-                x=alt.X("event_label:N", sort=list(year_events.sort_values("event_order")["event_label"]), title=None),
-                y=alt.Y("player_count:Q", title="Players"),
-                tooltip=["event_label", "event_date", "host", "player_count"],
-            )
-            .properties(height=320)
-        )
-        st.altair_chart(style_chart(players_chart), use_container_width=True)
+        event_options = []
+        for _, event_row in event_display.iterrows():
+            event_order = int(float(event_row["event_order"]))
+            event_label = str(event_row.get("event_label", event_order))
+            event_options.append((event_order, f"{event_order} - {event_label}"))
 
-    st.subheader("Event Results")
-    result_cols = ["event_order", "event_label", "player", "position", "buyin", "payout", "net", "host"]
-    event_results_table = year_results[result_cols].sort_values(["event_order", "position", "player"])
-    linked_player_table(event_results_table, "player")
+        event_label_to_order = {label: event_order for event_order, label in event_options}
+        event_labels = ["Select an event"] + [label for _, label in event_options]
+        default_event_order = query_value("event")
+        default_event_index = 0
+        if default_event_order:
+            try:
+                default_event_order = int(float(default_event_order))
+            except ValueError:
+                default_event_order = None
+            if default_event_order:
+                for index, (event_order, _) in enumerate(event_options, start=1):
+                    if event_order == default_event_order:
+                        default_event_index = index
+                        break
+
+        event_label_col, event_select_col, _ = st.columns([0.055, 0.28, 0.665], gap="small")
+        with event_label_col:
+            st.markdown('<p class="year-label">Event</p>', unsafe_allow_html=True)
+        with event_select_col:
+            selected_event_label = st.selectbox(
+                "Event",
+                event_labels,
+                index=default_event_index,
+                key=f"event_detail_{selected_year}",
+                label_visibility="collapsed",
+            )
+        selected_event_order = event_label_to_order.get(selected_event_label)
+        if selected_event_order:
+            selected_event = event_display[event_display["event_order"] == selected_event_order]
+            if not selected_event.empty:
+                selected_event_results = year_results[year_results["event_order"] == selected_event_order].copy()
+                selected_event_results = selected_event_results.dropna(subset=["player"])
+                render_event_detail(selected_event.iloc[0], selected_event_results)
+            else:
+                st.info("Select an event row to view details.")
+        else:
+            st.info("Select an event to view details.")
 
 with lifetime_tab:
     st.subheader("Lifetime Leaderboard")
