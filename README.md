@@ -8,13 +8,25 @@ This project converts `LDVP - Statistiques annuelles.xlsx` into normalized CSV f
 pip install -r requirements.txt
 ```
 
-## Convert the Workbook
+## Run the Dashboard
+
+```bash
+streamlit run dashboard.py
+```
+
+The dashboard includes current-year leaderboards, player performance, event summaries, lifetime standings, and raw generated tables.
+
+If no data has been loaded yet, the dashboard shows an upload page where you can upload `LDVP - Statistiques annuelles.xlsx` directly through the browser.
+
+## Convert the Workbook (optional CLI)
+
+If you prefer to convert the workbook from the command line instead of through the upload page:
 
 ```bash
 python convert_ldvp.py
 ```
 
-Generated files are written to `data/`:
+This requires `LDVP - Statistiques annuelles.xlsx` to be present in the project root. Generated files are written to `data/`:
 
 - `yearly_rankings.csv`
 - `player_year_stats.csv`
@@ -37,11 +49,3 @@ python validate_data.py
 ```
 
 The validation script checks that expected data files exist and verifies a few known workbook values.
-
-## Run the Dashboard
-
-```bash
-streamlit run dashboard.py
-```
-
-The dashboard includes current-year leaderboards, player performance, event summaries, lifetime standings, and raw generated tables.

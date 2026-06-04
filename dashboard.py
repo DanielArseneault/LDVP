@@ -319,10 +319,14 @@ st.markdown(
         border: 1px solid var(--border);
         border-radius: 10px;
         box-shadow: 0 18px 42px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
+        overflow: visible;
     }
-    .linked-table th,
-    .linked-table td {
+    .linked-table thead tr:first-child th:first-child { border-top-left-radius: 9px; }
+    .linked-table thead tr:first-child th:last-child { border-top-right-radius: 9px; }
+    .linked-table tbody tr:last-child td:first-child { border-bottom-left-radius: 9px; }
+    .linked-table tbody tr:last-child td:last-child { border-bottom-right-radius: 9px; }
+    .linked-table > thead > tr > th,
+    .linked-table > tbody > tr > td {
         border-bottom: 1px solid rgba(32, 53, 83, 0.86);
         box-sizing: border-box;
         height: 36px;
@@ -330,7 +334,7 @@ st.markdown(
         text-align: left;
         vertical-align: middle;
     }
-    .linked-table th {
+    .linked-table > thead > tr > th {
         background: #0b1728;
         color: var(--muted);
         font-weight: 600;
@@ -338,7 +342,7 @@ st.markdown(
         font-size: 0.72rem;
         height: 34px;
     }
-    .linked-table tr:hover td {
+    .linked-table > tbody > tr:hover > td {
         background: rgba(33, 212, 216, 0.08);
     }
     .player-link {
@@ -364,8 +368,16 @@ st.markdown(
         padding: 0.7rem 0.85rem !important;
     }
     #vg-tooltip-element table {
+        border: none !important;
+        border-collapse: collapse !important;
         color: var(--text) !important;
         margin: 0 !important;
+    }
+    #vg-tooltip-element tr,
+    #vg-tooltip-element th,
+    #vg-tooltip-element td {
+        border: none !important;
+        outline: none !important;
     }
     #vg-tooltip-element td.key {
         color: var(--muted) !important;
@@ -469,6 +481,88 @@ st.markdown(
         white-space: normal;
         overflow-wrap: anywhere;
     }
+    .metric-cell-tooltip {
+        cursor: default;
+    }
+    .linked-table td:has(.metric-cell-tooltip) {
+        overflow: visible;
+        position: relative;
+    }
+    .metric-cell-tooltip .tooltip-popup {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-5px);
+        transition: opacity 180ms ease, visibility 180ms ease, transform 180ms ease;
+        position: absolute;
+        z-index: 1000;
+        top: calc(100% + 6px);
+        left: 0;
+        background: linear-gradient(135deg, rgba(19, 36, 58, 0.99), rgba(13, 25, 43, 0.99));
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 0.7rem 0.8rem;
+        min-width: 240px;
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+    }
+    .linked-table td:has(.metric-cell-tooltip):hover .tooltip-popup {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    .linked-table tbody tr:nth-last-child(-n+3) td:has(.metric-cell-tooltip):hover .tooltip-popup {
+        top: auto;
+        bottom: calc(100% + 6px);
+    }
+    .tooltip-title {
+        color: var(--muted);
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+    }
+    .tooltip-table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-size: 0.78rem;
+        width: 100%;
+    }
+    .tooltip-table th,
+    .tooltip-table td {
+        border: none !important;
+        outline: none !important;
+    }
+    .tooltip-table thead tr {
+        border: none !important;
+    }
+    .tooltip-table th {
+        color: rgba(142, 162, 189, 0.45);
+        font-size: 0.62rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        padding: 0 0.45rem 0.55rem;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    .tooltip-table th:not(:first-child),
+    .tooltip-table td:not(:first-child) {
+        text-align: right;
+    }
+    .tooltip-table td {
+        color: var(--text);
+        padding: 0.32rem 0.45rem;
+    }
+    .tooltip-table tbody tr + tr td {
+        padding-top: 0.3rem;
+    }
+    .tooltip-table tbody tr:hover td {
+        background: rgba(33, 212, 216, 0.04);
+        border-radius: 4px;
+    }
+    .tooltip-table .cell-pos { color: var(--green); font-weight: 700; }
+    .tooltip-table .cell-neg { color: var(--orange); font-weight: 700; }
+    .trend-up { color: var(--green); font-size: 0.72rem; font-weight: 700; margin-left: 0.2rem; }
+    .trend-down { color: var(--orange); font-size: 0.72rem; font-weight: 700; margin-left: 0.2rem; }
     </style>
     """,
     unsafe_allow_html=True,
@@ -753,6 +847,69 @@ def metric_bar(value: object, min_value: float, max_value: float, column: str) -
         "</div>"
         f'<span class="metric-bar-value">{formatted_value}</span>'
         "</div>"
+    )
+
+
+def compute_rank_trend(ranking: pd.DataFrame, results: pd.DataFrame) -> dict[str, int | None]:
+    if results.empty or ranking.empty:
+        return {}
+    last_event = results["event_order"].dropna().max()
+    if pd.isna(last_event):
+        return {}
+    before = results[results["event_order"] != last_event]
+    players_with_history = set(before["player"].dropna().unique())
+    prev_net = (
+        before.groupby("player")["net"].sum()
+        .reindex(ranking["player"].dropna())
+        .fillna(0)
+    )
+    prev_ranks = prev_net.rank(method="first", ascending=False).astype(int)
+    trend: dict[str, int | None] = {}
+    for _, row in ranking.iterrows():
+        player = row.get("player")
+        if pd.isna(player) or player not in players_with_history:
+            trend[player] = None
+            continue
+        trend[player] = int(prev_ranks[player]) - int(row["rank"])
+    return trend
+
+
+def player_event_breakdown_html(player_results: pd.DataFrame, year: int) -> str:
+    rows = player_results.dropna(subset=["event_order"]).sort_values("event_order")
+    if rows.empty:
+        return f'<div class="tooltip-title">{year} &mdash; no games</div>'
+    count = len(rows)
+    label_word = "game" if count == 1 else "games"
+    title = f'<div class="tooltip-title">{year} &mdash; {count} {label_word}</div>'
+    cells = []
+    for _, row in rows.iterrows():
+        event_order = int_or_none(row.get("event_order"))
+        raw_label = row.get("event_label")
+        label_str = html.escape(str(raw_label)) if not pd.isna(raw_label) else f"Event {event_order}"
+        pos = int_or_none(row.get("position"))
+        pos_str = str(pos) if pos is not None else "–"
+        buyin = row.get("buyin")
+        buyin_td = f"<td>${float(buyin):,.0f}</td>" if not pd.isna(buyin) and float(buyin) > 0 else "<td>–</td>"
+        payout = row.get("payout")
+        payout_td = f'<td class="cell-pos">${float(payout):,.0f}</td>' if not pd.isna(payout) and float(payout) > 0 else "<td>–</td>"
+        net = row.get("net")
+        if pd.isna(net):
+            net_td = "<td>–</td>"
+        else:
+            net_val = float(net)
+            if net_val > 0:
+                net_td = f'<td class="cell-pos">+${net_val:,.0f}</td>'
+            elif net_val < 0:
+                net_td = f'<td class="cell-neg">-${abs(net_val):,.0f}</td>'
+            else:
+                net_td = "<td>$0</td>"
+        cells.append(f"<tr><td>{label_str}</td><td>{pos_str}</td>{buyin_td}{payout_td}{net_td}</tr>")
+    return (
+        title
+        + '<table class="tooltip-table">'
+        + "<thead><tr><th>Event</th><th>Pos</th><th>Buy-In</th><th>Payout</th><th>Net</th></tr></thead>"
+        + f'<tbody>{"".join(cells)}</tbody>'
+        + "</table>"
     )
 
 
@@ -1182,7 +1339,7 @@ with overview_tab:
 
     metric_col = available_metrics[metric_label]
     metric_values = year_stats[["player", metric_col]].copy() if metric_col in year_stats.columns else pd.DataFrame()
-    year_ranking_display = year_ranking[["rank", "player", "ranking_metric", "gap"]].copy()
+    year_ranking_display = year_ranking[["rank", "player"]].copy()
     if not metric_values.empty:
         year_ranking_display = year_ranking_display.merge(metric_values, on="player", how="left")
     else:
@@ -1190,19 +1347,46 @@ with overview_tab:
     metric_series = year_ranking_display[metric_col].dropna()
     min_metric_value = float(metric_series.min()) if not metric_series.empty else 0
     max_metric_value = float(metric_series.max()) if not metric_series.empty else 0
-    year_ranking_display[metric_col] = year_ranking_display[metric_col].apply(
-        lambda value: metric_bar(value, min_metric_value, max_metric_value, metric_col)
-    )
+    sort_ascending = metric_col == "avg_position"
+    year_ranking_display = year_ranking_display.sort_values(metric_col, ascending=sort_ascending, na_position="last")
+    rank_trend = compute_rank_trend(year_ranking, year_results)
+
+    def rank_cell(row: pd.Series) -> str:
+        rank_val = int_or_none(row["rank"])
+        rank_str = str(rank_val) if rank_val is not None else "–"
+        delta = rank_trend.get(row["player"])
+        if delta and delta > 0:
+            return f'{rank_str}<span class="trend-up">↑{delta}</span>'
+        if delta and delta < 0:
+            return f'{rank_str}<span class="trend-down">↓{abs(delta)}</span>'
+        return rank_str
+
+    year_ranking_display["rank"] = year_ranking_display.apply(rank_cell, axis=1)
+    tooltip_lookup = {
+        player: player_event_breakdown_html(
+            year_results[year_results["player"] == player], selected_year
+        )
+        for player in year_ranking_display["player"].dropna().unique()
+    }
+
+    def metric_bar_with_tooltip(row: pd.Series) -> str:
+        bar = metric_bar(row[metric_col], min_metric_value, max_metric_value, metric_col)
+        tooltip_content = tooltip_lookup.get(row["player"], "")
+        return (
+            f'<div class="metric-cell-tooltip">{bar}'
+            f'<div class="tooltip-popup">{tooltip_content}</div>'
+            "</div>"
+        )
+
+    year_ranking_display[metric_col] = year_ranking_display.apply(metric_bar_with_tooltip, axis=1)
     year_ranking_display = year_ranking_display.rename(
         columns={
             "rank": "Rank",
             "player": "Player",
-            "ranking_metric": "Ranked by",
             metric_col: metric_label,
-            "gap": "Gap",
         }
     )
-    styled_table(year_ranking_display, player_column="Player", max_rows=20, html_columns={metric_label})
+    styled_table(year_ranking_display, player_column="Player", max_rows=20, html_columns={metric_label, "Rank"})
 
 with players_tab:
     st.subheader(f"{selected_year} Player Table")

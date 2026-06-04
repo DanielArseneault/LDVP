@@ -531,7 +531,9 @@ def summarize(tables: Dict[str, pd.DataFrame], warnings: List[str]) -> None:
 
 if __name__ == "__main__":
     if not WORKBOOK.exists():
-        raise FileNotFoundError(f"Workbook not found: {WORKBOOK}")
+        print(f"Workbook not found: {WORKBOOK}")
+        print("Place the Excel file in the project root, or use the dashboard upload page instead.")
+        raise SystemExit(1)
     parsed_tables = parse_workbook(WORKBOOK)
     validation_warnings = validate_tables(parsed_tables)
     summarize(parsed_tables, validation_warnings)
