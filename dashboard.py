@@ -141,13 +141,23 @@ st.markdown(
         --green: #2dd489;
         --orange: #ff7a3d;
     }
+    * {
+        box-sizing: border-box;
+    }
+    html,
+    body,
+    .stApp,
+    [data-testid="stAppViewContainer"] {
+        max-width: 100%;
+    }
     .stApp {
         background: linear-gradient(135deg, #07111f 0%, #0a1526 46%, #111827 100%);
         color: var(--text);
     }
     .block-container {
         max-width: 1500px;
-        padding-top: 3rem;
+        padding: 3rem clamp(1rem, 3vw, 4rem) 3rem;
+        width: 100%;
     }
     h1 {
         color: var(--text);
@@ -254,10 +264,21 @@ st.markdown(
     [data-testid="stTabs"] [role="tablist"] {
         border-bottom: 1px solid var(--border);
         gap: 0.35rem;
+        max-width: 100%;
+        overflow-x: auto;
+        scrollbar-width: thin;
     }
     [data-testid="stTabs"] [role="tab"] {
         color: var(--muted);
+        flex: 0 0 auto;
         padding: 0.65rem 1rem;
+    }
+    [data-testid="stHorizontalBlock"],
+    [data-testid="column"] {
+        min-width: 0;
+    }
+    [data-testid="column"] > div {
+        min-width: 0;
     }
     [data-testid="stTabs"] [aria-selected="true"] {
         color: var(--text);
@@ -285,7 +306,8 @@ st.markdown(
         background: var(--panel);
         border: 1px solid var(--border);
         border-radius: 10px;
-        overflow: hidden;
+        max-width: 100%;
+        overflow-x: auto;
     }
     hr {
         border-color: var(--border);
@@ -333,6 +355,7 @@ st.markdown(
         padding: 0.42rem 0.55rem;
         text-align: left;
         vertical-align: middle;
+        overflow-wrap: anywhere;
     }
     .linked-table > thead > tr > th {
         background: #0b1728;
@@ -494,7 +517,7 @@ st.markdown(
         transform: translateY(-5px);
         transition: opacity 180ms ease, visibility 180ms ease, transform 180ms ease;
         position: absolute;
-        z-index: 1000;
+        z-index: 10000;
         top: calc(100% + 6px);
         left: 0;
         background: linear-gradient(135deg, rgba(19, 36, 58, 0.99), rgba(13, 25, 43, 0.99));
@@ -563,6 +586,193 @@ st.markdown(
     .tooltip-table .cell-neg { color: var(--orange); font-weight: 700; }
     .trend-up { color: var(--green); font-size: 0.72rem; font-weight: 700; margin-left: 0.2rem; }
     .trend-down { color: var(--orange); font-size: 0.72rem; font-weight: 700; margin-left: 0.2rem; }
+    @media (max-width: 700px) {
+        .block-container {
+            padding: 0.9rem 0.75rem 2rem;
+        }
+        h1 {
+            font-size: 1.55rem !important;
+        }
+        h2 {
+            font-size: 1.35rem !important;
+            line-height: 1.2 !important;
+        }
+        h3 {
+            font-size: 1.2rem !important;
+            line-height: 1.2 !important;
+        }
+        [data-testid="stHorizontalBlock"] {
+            flex-wrap: wrap;
+            gap: 0.6rem !important;
+        }
+        [data-testid="stHorizontalBlock"] > [data-testid="column"] {
+            flex: 1 1 100% !important;
+            width: 100% !important;
+        }
+        [data-testid="stHorizontalBlock"]:has(> [data-testid="column"]:nth-child(4)) > [data-testid="column"] {
+            flex: 1 1 calc(50% - 0.35rem) !important;
+            width: calc(50% - 0.35rem) !important;
+        }
+        [data-testid="stMetric"],
+        .leader-card,
+        .event-detail-card {
+            border-radius: 8px;
+            box-shadow: none;
+            min-height: auto;
+            padding: 0.65rem 0.7rem 0.8rem;
+        }
+        [data-testid="stMetric"]::after,
+        .leader-card::after,
+        .event-detail-card::after {
+            bottom: 0.42rem;
+            left: 0.7rem;
+            width: 42px;
+        }
+        [data-testid="stMetricLabel"] p,
+        .leader-label,
+        .event-detail-label {
+            font-size: 0.66rem;
+            line-height: 1.15;
+            margin-bottom: 0.35rem;
+        }
+        [data-testid="stMetricValue"] {
+            font-size: 1.22rem !important;
+        }
+        .leader-name {
+            font-size: 1rem;
+        }
+        .leader-amount {
+            font-size: 0.82rem;
+            margin-top: 0.25rem;
+        }
+        .app-kicker {
+            font-size: 1.45rem;
+            margin-bottom: 0.75rem;
+        }
+        .year-label {
+            font-size: 0.9rem;
+            line-height: 1.1;
+            margin: 0 0 0.35rem;
+            padding-top: 0.1rem;
+        }
+        [data-testid="stTabs"] [role="tab"] {
+            padding: 0.6rem 0.85rem;
+        }
+        .event-detail-grid {
+            gap: 0.65rem;
+            grid-template-columns: 1fr;
+        }
+        .linked-table,
+        .linked-table thead,
+        .linked-table tbody,
+        .linked-table tr,
+        .linked-table th,
+        .linked-table td {
+            display: block;
+            width: 100%;
+        }
+        .linked-table {
+            border-radius: 8px;
+            overflow: visible;
+        }
+        .linked-table thead {
+            display: none;
+        }
+        .linked-table > tbody > tr {
+            border-bottom: 1px solid rgba(32, 53, 83, 0.86);
+            padding: 0.5rem 0.62rem;
+        }
+        .linked-table > tbody > tr:last-child {
+            border-bottom: 0;
+        }
+        .linked-table > tbody > tr > td {
+            align-items: start;
+            border-bottom: 0;
+            display: grid;
+            gap: 0.55rem;
+            grid-template-columns: minmax(5.4rem, 36%) minmax(0, 1fr);
+            height: auto;
+            min-height: 1.85rem;
+            padding: 0.28rem 0;
+        }
+        .linked-table > tbody > tr > td::before {
+            color: var(--muted);
+            content: attr(data-label);
+            font-size: 0.62rem;
+            font-weight: 800;
+            line-height: 1.25;
+            text-transform: uppercase;
+        }
+        .linked-table > tbody > tr:has(.metric-cell-tooltip) {
+            display: grid;
+            gap: 0.28rem 0.5rem;
+            grid-template-columns: 2.1rem minmax(0, 1fr);
+            padding: 0.46rem 0.62rem;
+        }
+        .linked-table > tbody > tr:has(.metric-cell-tooltip) > td {
+            display: block;
+            min-height: 0;
+            padding: 0;
+        }
+        .linked-table > tbody > tr:has(.metric-cell-tooltip) > td::before {
+            content: "";
+            display: none;
+        }
+        .linked-table > tbody > tr:has(.metric-cell-tooltip) > td:first-child {
+            color: var(--muted);
+            font-size: 0.66rem;
+            font-weight: 800;
+            line-height: 1.2;
+            padding-top: 0.12rem;
+        }
+        .linked-table > tbody > tr:has(.metric-cell-tooltip) > td:first-child::before {
+            content: "#";
+            display: inline;
+        }
+        .linked-table > tbody > tr:has(.metric-cell-tooltip) > td:nth-child(2) {
+            font-size: 0.9rem;
+            font-weight: 750;
+            line-height: 1.18;
+        }
+        .linked-table > tbody > tr:has(.metric-cell-tooltip) > td:has(.metric-cell-tooltip) {
+            display: grid;
+            gap: 0.42rem;
+            grid-column: 1 / -1;
+            grid-template-columns: minmax(0, 1fr);
+            margin-top: 0.16rem;
+            position: relative;
+        }
+        .linked-table > tbody > tr:has(.metric-cell-tooltip) > td:has(.metric-cell-tooltip)::before {
+            content: "";
+            display: none;
+        }
+        .metric-bar-cell {
+            gap: 0.35rem;
+            grid-template-columns: minmax(0, 1fr);
+            min-width: 0;
+        }
+        .metric-bar-value {
+            text-align: left;
+            white-space: normal;
+        }
+        .linked-table > tbody > tr:has(.metric-cell-tooltip) .metric-bar-cell {
+            align-items: center;
+            grid-template-columns: minmax(0, 1fr) auto;
+        }
+        .linked-table > tbody > tr:has(.metric-cell-tooltip) .metric-bar-track {
+            height: 0.46rem;
+        }
+        .linked-table > tbody > tr:has(.metric-cell-tooltip) .metric-bar-value {
+            font-size: 0.8rem;
+            text-align: right;
+            white-space: nowrap;
+        }
+        .metric-cell-tooltip .tooltip-popup {
+            left: 0;
+            max-width: calc(100vw - 2rem);
+            min-width: min(260px, calc(100vw - 2rem));
+        }
+    }
     </style>
     """,
     unsafe_allow_html=True,
@@ -921,7 +1131,8 @@ def styled_table(
 ) -> None:
     table = df.head(max_rows).copy() if max_rows else df.copy()
     trusted_html_columns = html_columns or set()
-    headers = "".join(f"<th>{html.escape(format_column_label(column))}</th>" for column in table.columns)
+    column_labels = {column: format_column_label(column) for column in table.columns}
+    headers = "".join(f"<th>{html.escape(column_labels[column])}</th>" for column in table.columns)
     rows = []
     for _, row in table.iterrows():
         cells = []
@@ -932,7 +1143,8 @@ def styled_table(
                 value = player_anchor(row[column])
             else:
                 value = format_table_value(row[column], str(column))
-            cells.append(f"<td>{value}</td>")
+            label = html.escape(column_labels[column])
+            cells.append(f'<td data-label="{label}">{value}</td>')
         rows.append(f"<tr>{''.join(cells)}</tr>")
     st.markdown(
         f"<table class=\"linked-table\"><thead><tr>{headers}</tr></thead>"
@@ -1320,9 +1532,7 @@ with metric4:
         unsafe_allow_html=True,
     )
 
-overview_tab, players_tab, events_tab, lifetime_tab, data_tab = st.tabs(
-    ["Overview", "Players", "Events", "Lifetime", "Data"]
-)
+overview_tab, events_tab, lifetime_tab = st.tabs(["Overview", "Events", "Lifetime"])
 
 with overview_tab:
     table_title_col, metric_col_control, _ = st.columns([0.22, 0.16, 0.62], gap="small")
@@ -1387,48 +1597,6 @@ with overview_tab:
         }
     )
     styled_table(year_ranking_display, player_column="Player", max_rows=20, html_columns={metric_label, "Rank"})
-
-with players_tab:
-    st.subheader(f"{selected_year} Player Table")
-    display_cols = [
-        "rank",
-        "player",
-        "net_gain",
-        "avg_buyin",
-        "money_pct",
-        "wins",
-        "avg_position",
-        "games_played",
-        "hosted",
-        "bubbles",
-        "total_points",
-        "points_rank",
-        "kills",
-    ]
-    available_cols = [col for col in display_cols if col in year_stats.columns]
-    player_table = year_stats[available_cols].sort_values(["net_gain", "games_played"], ascending=[False, False])
-    linked_player_table(player_table, "player")
-
-    col1, col2 = st.columns(2)
-    with col1:
-        st.subheader("Wins")
-        wins = year_stats.dropna(subset=["wins"]).sort_values("wins", ascending=False).head(15)
-        diverging_bar(wins, "wins", "player", "Wins", height=360)
-    with col2:
-        st.subheader("Average Finish")
-        finishes = year_stats.dropna(subset=["avg_position"])
-        finishes = finishes.sort_values("avg_position", ascending=True).head(15)
-        chart = (
-            alt.Chart(finishes)
-            .mark_bar(color="#21d4d8")
-            .encode(
-                x=alt.X("avg_position:Q", title="Average position"),
-                y=alt.Y("player:N", sort="x", title=None),
-                tooltip=["player", "avg_position", "games_played"],
-            )
-            .properties(height=360)
-        )
-        st.altair_chart(style_chart(chart), use_container_width=True)
 
 with events_tab:
     st.subheader(f"{selected_year} Event Summary")
@@ -1525,8 +1693,3 @@ with lifetime_tab:
         .properties(height=max(360, min(720, heatmap_source["player"].nunique() * 26)))
     )
     st.altair_chart(style_chart(heatmap), use_container_width=True)
-
-with data_tab:
-    st.subheader("Generated Tables")
-    selected_table = st.selectbox("Table", list(tables.keys()))
-    styled_table(tables[selected_table], max_rows=500)
